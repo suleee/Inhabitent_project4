@@ -1,0 +1,35 @@
+.site-footer{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: url('../../images/dark-wood@2x.png');
+	height: 300px;
+    width: 100%;
+    padding: 50px 20px 0 20px;
+    // align-content: flex-start;
+
+    h3{
+        margin-top: 0;
+        color: #d99054;
+    }
+    p{
+        color: white;
+    }
+    .contactInfo{
+        flex-basis: 25%;
+    }
+    .businessHour{
+        flex-basis: 25%;
+    }
+    .footerLogo{
+        flex-basis: 50%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        img{
+            width: 250px;
+        }
+    }
+}
+

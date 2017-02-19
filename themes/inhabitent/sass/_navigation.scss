@@ -2,11 +2,11 @@
 # Navigation
 --------------------------------------------------------------*/
 
+
 /* Links */
 
 a {
 	color: $color__link;
-
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -24,20 +24,40 @@ a {
 	}
 }
 
+
 /* Menus */
-
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+	padding: 10px 0 10px 10px;
+    .container{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;    
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+    .logo{
+        // margin-left: 50px;
+        display: flex;
+        // align-items: center;    
+        height: 100%;
+        width: 50px;
+		text-align: center;
+		padding-top: 10px;
+    }
+    
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
+		flex-basis: 20%; 
+    	align-content: flex-end;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -45,57 +65,51 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
-
 			ul {
 				left: -999rem;
 				top: 0;
 			}
-
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
 	li {
 		float: left;
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		&:hover>a,
+		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
+.menu li{
+	padding-right: 20px;
+}
+
+
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -113,20 +127,49 @@ a {
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
 	}
 }
+
+.site-branding p {
+	display: none;
+}
+
+
+.site-header{
+	height: 0px;
+}
+
+
+// .site-header h1{
+// background-image: url(../../images/logos/inhabitent-logo-tent.svg);
+//     background-size: 50px 33px;
+//     height: 33px;
+//     /* overflow: hidden;*/
+//     white-space: nowrap;
+//     width: 50px;
+// }
+// .site-header a{
+//   background-image: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat;
+//   background-size: contain, 50px 100px, cover;
+// //   width: 100px;
+// //   height: 100px;
+//   }
+// background:linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
+// 	url('images/banner-girl.png') no-repeat center 4.5rem,
+// 	url('images/flower-bkgd.jpg') repeat-x center top;
+// 	background-size: contain, 11rem 26rem, cover;
+// 	height: 400px;
+// 	position: relative;
+// 	margin-top: 119px;
