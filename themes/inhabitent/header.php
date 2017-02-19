@@ -28,23 +28,16 @@
 				</div>
 				<!-- .site-branding -->
 
-<nav id="site-navigation" class="main-navigation">
-	<div class="container">
-		<div class="logo">
-			<a href="inhabitent/home">
-				<img src=" <?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="logo">
-			</a>
-		</div>
-		<div class="right-menu">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-<!--	
-		
-		<?php get_search_form( )?>-->
-		</div>
-		</div>
-	</nav><!-- #site-navigation -->
-
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
-			<div id="content" class="site-content">
+			<nav id="site-navigation" class="main-navigation reverse-navigation">
+				<div class="container">
+					<div class="logo">
+						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-logo" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg) no-repeat; background-size: contain">Inhabitent Logo</h1></a>
+					</div>
+					<div class="right-menu">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					</div>
+				</div>
+			</nav><!-- #site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">

@@ -479,11 +479,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: white; }
+  color: #248A83; }
   a:visited {
-    color: white; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #f0e4d1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -507,13 +507,16 @@ a {
         align-items: center;
     margin: 0 auto;
     max-width: 1120px; }
-  .main-navigation .logo {
+  .main-navigation .header-logo {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    width: 50px;
+    width: 70px;
     text-align: center;
-    padding-top: 10px; }
+    padding-top: 10px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -591,14 +594,6 @@ a {
   background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center center;
   background-size: auto, auto, cover;
   height: 600px; }
-
-.about_hero_banner {
-  height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  background: url("../../images/logos/inhabitent-logo-full.svg") center center no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center center;
-  background-size: auto, auto, cover;
-  background-size: cover; }
 
 /*--------------------------------------------------------------
 # Accessibility

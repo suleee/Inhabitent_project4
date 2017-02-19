@@ -30,7 +30,7 @@ a {
     display: block;
     float: left;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, .3);
     height: 70px;
 	padding: 10px 0 10px 10px;
     .container{
@@ -41,16 +41,22 @@ a {
         margin: 0 auto;
         max-width: 1120px;
     }
-    .logo{
+    .header-logo{
         // margin-left: 50px;
         display: flex;
         // align-items: center;    
         height: 100%;
-        width: 50px;
+        width: 70px;
 		text-align: center;
 		padding-top: 10px;
+		overflow: hidden;
+    	text-indent: 100%; 
+		white-space: nowrap;
     }
-    
+    // .reverse-navigation .header-logo{
+
+
+	// }
 	ul {
 		display: none;
 		list-style: none;
