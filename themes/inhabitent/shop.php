@@ -1,4 +1,4 @@
-<?php /* Template Name: about */ ?>
+<?php /* Template Name: shop */ ?>
 <!-- this name is to setup the custom page template -->
 
 
@@ -11,10 +11,9 @@
 
 get_header(); ?>
 
-	<section class="about">
-		<div class="about_hero_banner">
-        <h1 class="about-hero-text"> About </h1>
-        </div>
+	<section class="shop">
+        <h1 class="shop-text"> Shop stuff </h1>
+     
 	</section>
     
    <section class="about_text">

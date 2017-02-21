@@ -26,13 +26,36 @@ a {
 
 
 /* Menus */
+// .site-header{
+// 	position: fixed;
+// }
+
+.home .main-navigation{
+	border-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	a{
+		color: white;
+	}
+}
+.page-template .main-navigation{
+	border-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	a{
+		color: white;
+	}
+}
+
 .main-navigation {
-    display: block;
+	position: fixed;
+    height: 70px;
+	z-index: 1;
+	display: block;
     float: left;
     width: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    height: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+    
 	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #d3d3d3;
     .container{
         height: 50px;
         display: flex;
@@ -53,6 +76,9 @@ a {
     	text-indent: 100%; 
 		white-space: nowrap;
     }
+	.right-menu{
+		width: 350px;
+	}
     // .reverse-navigation .header-logo{
 
 
@@ -110,7 +136,7 @@ a {
 }
 
 .menu li{
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 

@@ -32,7 +32,7 @@
 		</div>
 
 		<div class="copyright">
-			<p> Copyright @ 2016m inhabitent</p>
+			<p> Copyright @ 2016 inhabitent</p>
 		</div>
 
 	</footer><!-- #colophon -->

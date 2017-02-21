@@ -16,7 +16,29 @@ function red_starter_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
-
 	return $classes;
 }
+
+function my_login_logo() { ?>
+
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+			width: 300px;
+            background-size: 300px;
+        }
+		.login a:active{
+			
+			}
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+// Change WordPress Login Logo URL
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+function custom_loginlogo_url($url) {
+    return get_bloginfo( 'url' );
+}

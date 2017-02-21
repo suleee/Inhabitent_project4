@@ -1,0 +1,30 @@
+// .journal{
+//     display: flex;
+// }
+
+.side_bar_enabler{
+	display: flex;
+	width: 100%;
+
+}
+
+#secondary{
+    border-left: 1px solid #d3d3d3;
+    padding: 50px 40px 0 40px; 
+    width: 30%;
+    margin-right: 0;
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style-type: none;
+        text-decoration: none;
+    }
+    h2{
+        margin: 0px;
+    }
+    p{
+        margin: 0;
+    }
+}
