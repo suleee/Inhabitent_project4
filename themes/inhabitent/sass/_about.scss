@@ -1,34 +1,34 @@
+.page-template .main-navigation{
+	border-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	a{
+		color: white;
+	}
+}
 
-.about_hero_banner{
-	
-	// background:
-	// linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ),	url('../../images/about-hero.jpg') no-repeat center 0px;
-	background-size: cover;
+.about_header{
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	
+	align-items: center;	
 }
-
 .about-hero-text{
 	color: white;
 	font-size: 50px;
-	
 	text-transform: uppercase;
 }
 
-// .page-template-singlepage-template .site-content{
-//     padding-top: 0px;
-// }
 .about_text{
 	text-align: center;
 	padding: 0 50px 0 50px;
 	h2{
 		color: purple;
+		text-transform: uppercase;
+		font-size: 30px;
 	}
 	p{
 		padding: 0 30px 0 30px;
 		text-align: left;
 	}
 }
+

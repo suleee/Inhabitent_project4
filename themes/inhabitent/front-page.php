@@ -16,7 +16,7 @@ get_header(); ?>
       <h2> Inhabitent Journal</h2>
 
     <?php
-    global $post;
+    // global $post;
       $args = array( 
         'post_type' => 'post', 
         'order' => 'ASC',

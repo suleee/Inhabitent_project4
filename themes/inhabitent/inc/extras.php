@@ -78,3 +78,21 @@ function custom_loginlogo_title() {
     return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'custom_loginlogo_title' );
+
+
+
+
+// about page hero banner
+function about_hero_banner() {
+	wp_enqueue_style(
+		'custom-style', get_template_directory_uri().'build/css/style.min.css'
+	);
+	$url = CFS()->get( 'about_header_image' );
+
+	$custom_css = ".about_header{ background:
+	linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url($url) no-repeat center 0px;
+	background-size: cover}";
+	
+	wp_add_inline_style( 'custom-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'about_hero_banner' );

@@ -10,12 +10,10 @@
  */
 
 get_header(); ?>
-
-	<section class="about">
+	<section class="about_header">
 		
         <h1 class="about-hero-text"> About </h1>
-		<div class="about_hero_image"><?php echo CFS()->get( 'about_header_image' ); ?>
-        </div>
+		<!--about_hero_banner();-->
 	</section>
     
    <section class="about_text">

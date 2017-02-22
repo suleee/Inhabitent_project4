@@ -315,12 +315,6 @@ a {
   .home .main-navigation a {
     color: white; }
 
-.page-template .main-navigation {
-  border-bottom: 0px;
-  background-color: transparent; }
-  .page-template .main-navigation a {
-    color: white; }
-
 .main-navigation {
   position: fixed;
   height: 70px;
@@ -692,8 +686,13 @@ textarea {
 .home .site-content {
   padding-top: 0px; }
 
-.about_hero_banner {
-  background-size: cover;
+.page-template .main-navigation {
+  border-bottom: 0px;
+  background-color: transparent; }
+  .page-template .main-navigation a {
+    color: white; }
+
+.about_header {
   height: 100vh;
   display: -ms-flexbox;
   display: flex;
@@ -711,7 +710,9 @@ textarea {
   text-align: center;
   padding: 0 50px 0 50px; }
   .about_text h2 {
-    color: purple; }
+    color: purple;
+    text-transform: uppercase;
+    font-size: 30px; }
   .about_text p {
     padding: 0 30px 0 30px;
     text-align: left; }
