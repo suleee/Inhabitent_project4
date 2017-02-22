@@ -1,12 +1,14 @@
 
 .about_hero_banner{
-	background:
-	linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ),	url('../../images/about-hero.jpg') no-repeat center 0px;
+	
+	// background:
+	// linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ),	url('../../images/about-hero.jpg') no-repeat center 0px;
 	background-size: cover;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 .about-hero-text{
@@ -16,9 +18,9 @@
 	text-transform: uppercase;
 }
 
-.page-template-about .site-content{
-    padding-top: 0px;
-}
+// .page-template-singlepage-template .site-content{
+//     padding-top: 0px;
+// }
 .about_text{
 	text-align: center;
 	padding: 0 50px 0 50px;

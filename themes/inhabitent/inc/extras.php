@@ -19,26 +19,62 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 
-function my_login_logo() { ?>
-
+function inhabitent_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
 			width: 300px;
             background-size: 300px;
         }
+		#login .button.button-primary {
+ 				background-color: #24BAB3;
+			}
 		.login a:active{
 			
 			}
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'inhabitent_login_logo' );
+
+// function childtheme_custom_login() {
+//     echo '<style type="text/css">                                                                   
+//     h1 a { background: url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important;
+//     background-size: 310px !important;
+//     background-repeat: no-repeat !important;
+
+//     background-position: bottom !important; 
+//     height: 120px !important; width: 310px !important; margin-left: -40px;}                            
+// </style>';
+
+// }
+
+// add_action('login_head', 'childtheme_custom_login');
+
 
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 
 // Change WordPress Login Logo URL
-add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+/**
+ * Adds custom classes to the array of body classes.
+ *
+ * @param array $classes Classes for the body element.
+ * @return array
+ */
+ //this is the logo link
 function custom_loginlogo_url($url) {
-    return get_bloginfo( 'url' );
+    return home_url( );
 }
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+
+
+/**
+ * Adds custom classes to the array of body classes.
+ *
+ * @return array
+ */
+ //this is the title link 
+function custom_loginlogo_title() {
+    return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'custom_loginlogo_title' );

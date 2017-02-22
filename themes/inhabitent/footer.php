@@ -13,7 +13,7 @@
 		<div class="contactInfo">
 			<h3> Contact Info</h3>
 				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@inhabitent.com</p>
-				<p><i class="fa fa-phone" aria-hidden="true"></i> Phone number here</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</p>
 				<p>
 				<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
 				<span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
