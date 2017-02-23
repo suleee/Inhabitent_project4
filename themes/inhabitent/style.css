@@ -315,6 +315,12 @@ a {
   .home .main-navigation a {
     color: white; }
 
+.page-template .main-navigation {
+  border-bottom: 0px;
+  background-color: transparent; }
+  .page-template .main-navigation a {
+    color: white; }
+
 .main-navigation {
   position: fixed;
   height: 70px;
@@ -671,8 +677,40 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.page-template-shop .site-content {
-  padding-top: 100px; }
+.post-type-archive .site-content #primary {
+  width: 100%;
+  margin: auto; }
+
+.post-type-archive .site-content .page-header {
+  text-align: center;
+  border-bottom: 1px dashed grey; }
+  .post-type-archive .site-content .page-header .product-type-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    list-style-type: none;
+    margin: auto; }
+
+.post-type-archive .site-content .proudct-posts {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1020px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .post-type-archive .site-content .proudct-posts .posts {
+    border: 1px solid black;
+    margin: 10px;
+    -ms-flex: 0 1 23%;
+        flex: 0 1 23%;
+    max-width: 23%; }
+    .post-type-archive .site-content .proudct-posts .posts .thumbnail-wrapper {
+      overflow: hidden; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -686,11 +724,71 @@ textarea {
 .home .site-content {
   padding-top: 0px; }
 
-.page-template .main-navigation {
-  border-bottom: 0px;
-  background-color: transparent; }
-  .page-template .main-navigation a {
-    color: white; }
+.shopstufftitle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .shopstufftitle h2 {
+    min-width: 100%;
+    text-align: center; }
+  .shopstufftitle .taxonomy_loop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .shopstufftitle .taxonomy_loop .category-wrappper {
+      padding: 20px;
+      border: 1px solid grey;
+      border-top: 3px solid grey;
+      margin: 0 10px 0 10px;
+      width: 250px;
+      text-align: center; }
+      .shopstufftitle .taxonomy_loop .category-wrappper img {
+        width: 70px; }
+      .shopstufftitle .taxonomy_loop .category-wrappper .category-link {
+        color: white;
+        text-decoration: none;
+        background-color: #248A83;
+        padding: 10px; }
+
+.inhabitent-journal-posts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .inhabitent-journal-posts h2 {
+    min-width: 100%;
+    text-align: center; }
+  .inhabitent-journal-posts .frontpageposts {
+    display: -ms-flexbox;
+    display: flex; }
+    .inhabitent-journal-posts .frontpageposts .journal-wrapper {
+      margin: 0 5px 0 5px;
+      border: 1px solid grey;
+      max-width: 340px;
+      overflow: hidden; }
+      .inhabitent-journal-posts .frontpageposts .journal-wrapper .thumbnail-wrapper {
+        width: 340px;
+        height: 245px;
+        background-color: grey; }
+        .inhabitent-journal-posts .frontpageposts .journal-wrapper .thumbnail-wrapper img {
+          height: 240px; }
+      .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper {
+        padding: 10px; }
+        .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-title {
+          font-size: 20px;
+          margin-bottom: 10px;
+          margin-top: 5px; }
+        .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-meta {
+          font-size: 10px; }
+
+.page-template-singlepage-template .site-content {
+  padding-top: 0px; }
 
 .about_header {
   height: 100vh;

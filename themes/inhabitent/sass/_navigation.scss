@@ -26,63 +26,64 @@ a {
 
 
 /* Menus */
-// .site-header{
-// 	position: fixed;
-// }
 
-.home .main-navigation{
+.home .main-navigation {
 	border-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0);
-	a{
-		
+	a {
 		color: white;
 	}
 }
+
+.page-template .main-navigation {
+	border-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	a {
+		color: white;
+	}
+}
+
 .main-navigation {
 	position: fixed;
-    height: 70px;
+	height: 70px;
 	z-index: 1;
 	display: block;
-    float: left;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    
+	float: left;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 10px 0 10px 10px;
 	border-bottom: 1px solid #d3d3d3;
-    .container{
-        height: 50px;
-        display: flex;
-        justify-content: space-between;    
-        align-items: center;
-        margin: 0 auto;
-        max-width: 1120px;
-    }
-    .header-logo{
-        // margin-left: 50px;
-        display: flex;
-        // align-items: center;    
-        height: 100%;
-        width: 70px;
+	.container {
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 1120px;
+	}
+	.header-logo {
+		// margin-left: 50px;
+		display: flex;
+		// align-items: center;    
+		height: 100%;
+		width: 70px;
 		text-align: center;
 		padding-top: 10px;
 		overflow: hidden;
-    	text-indent: 100%; 
+		text-indent: 100%;
 		white-space: nowrap;
-    }
-	.right-menu{
+	}
+	.right-menu {
 		width: 350px;
 	}
-    // .reverse-navigation .header-logo{
 
-
-	// }
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		flex-basis: 20%; 
-    	align-content: flex-end;
+		flex-basis: 20%;
+		align-content: flex-end;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -128,7 +129,7 @@ a {
 	.current_page_ancestor>a {}
 }
 
-.menu li{
+.menu li {
 	padding-right: 10px;
 }
 
@@ -171,30 +172,6 @@ a {
 	display: none;
 }
 
-
-.site-header{
+.site-header {
 	height: 0px;
 }
-
-
-// .site-header h1{
-// background-image: url(../../images/logos/inhabitent-logo-tent.svg);
-//     background-size: 50px 33px;
-//     height: 33px;
-//     /* overflow: hidden;*/
-//     white-space: nowrap;
-//     width: 50px;
-// }
-// .site-header a{
-//   background-image: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat;
-//   background-size: contain, 50px 100px, cover;
-// //   width: 100px;
-// //   height: 100px;
-//   }
-// background:linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ),
-// 	url('images/banner-girl.png') no-repeat center 4.5rem,
-// 	url('images/flower-bkgd.jpg') repeat-x center top;
-// 	background-size: contain, 11rem 26rem, cover;
-// 	height: 400px;
-// 	position: relative;
-// 	margin-top: 119px;

@@ -2,19 +2,84 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
 /* Front page */
-.home-hero{
-	background: url('../../images/logos/inhabitent-logo-full.svg') center center no-repeat,
-	linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ),
-	url('../../images/home-hero.jpg') no-repeat center 0px;
+
+.home-hero {
+	background: url('../../images/logos/inhabitent-logo-full.svg') center center no-repeat, linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/home-hero.jpg') no-repeat center 0px;
 	background-size: auto, contain, cover;
 	height: 700px;
 }
 
-.home .site-content{
-    padding-top: 0px;
+.home .site-content {
+	padding-top: 0px;
 }
 
-h2{
-	
+.shopstufftitle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	h2 {
+		min-width: 100%;
+		text-align: center;
+	}
+	.taxonomy_loop {
+		display: flex;
+		justify-content: center;
+		.category-wrappper {
+			padding: 20px;
+			border: 1px solid grey;
+			border-top: 3px solid grey;
+			margin: 0 10px 0 10px;
+			width: 250px;
+			text-align: center;
+			img {
+				width: 70px;
+			}
+			.category-link {
+				color: white;
+				text-decoration: none;
+				background-color: #248A83;
+				padding: 10px;
+			}
+		}
+	}
+}
+
+.inhabitent-journal-posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	h2 {
+		min-width: 100%;
+		text-align: center;
+	}
+	.frontpageposts {
+		display: flex;
+		.journal-wrapper {
+			margin: 0 5px 0 5px;
+			border: 1px solid grey;
+			max-width: 340px;
+			overflow: hidden;
+			.thumbnail-wrapper {
+				width: 340px;
+				height: 245px;
+				background-color: grey;
+				img {
+					height: 240px;
+				}
+			}
+			.journal-text-wrapper {
+				padding: 10px;
+				.entry-title {
+					font-size: 20px;
+					margin-bottom: 10px;
+					margin-top: 5px;
+				}
+				.entry-meta {
+					font-size: 10px;
+				}
+			}
+		}
+	}
 }

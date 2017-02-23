@@ -37,17 +37,14 @@ function inhabitent_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'inhabitent_login_logo' );
 
 // function childtheme_custom_login() {
-//     echo '<style type="text/css">                                                                   
+//     echo '<style type="text/css">                                                           
 //     h1 a { background: url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important;
 //     background-size: 310px !important;
 //     background-repeat: no-repeat !important;
-
 //     background-position: bottom !important; 
-//     height: 120px !important; width: 310px !important; margin-left: -40px;}                            
+//     height: 120px !important; width: 310px !important; margin-left: -40px;}                 
 // </style>';
-
 // }
-
 // add_action('login_head', 'childtheme_custom_login');
 
 
@@ -82,17 +79,45 @@ add_filter( 'login_headertitle', 'custom_loginlogo_title' );
 
 
 
-// about page hero banner
-function about_hero_banner() {
-	wp_enqueue_style(
-		'custom-style', get_template_directory_uri().'build/css/style.min.css'
-	);
-	$url = CFS()->get( 'about_header_image' );
+// // first version 
+// function about_hero_banner() {
+// 	wp_enqueue_style(
+// 		'custom-style', get_template_directory_uri().'/build/css/style.css'
+// 	);
+// 	$url = CFS()->get( 'about_header_image' );
+// 	$custom_css = ".about_header{ background:
+// 	linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url($url), no-repeat center 0px;
+// 	background-size: cover}";
+// 	wp_add_inline_style( 'custom-style', $custom_css );
+// }
+// add_action( 'wp_enqueue_scripts', 'about_hero_banner' );
 
-	$custom_css = ".about_header{ background:
-	linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url($url) no-repeat center 0px;
-	background-size: cover}";
-	
-	wp_add_inline_style( 'custom-style', $custom_css );
+
+// second version 
+function hero_banner_css() {
+	if(!is_page_template('singlepage-template.php')){
+		return;
+	}
+
+	$image = CFS()->get( 'about_header_image' );
+		if(!$image){
+			return;
+		}
+
+	$hero_css = ".page-template-singlepage-template .about_header {
+        background:
+            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            url({$image}) no-repeat center bottom;
+        background-size: cover, cover;
+}";
+	wp_add_inline_style( 'red-starter-style', $hero_css );
+
+} add_action('wp_enqueue_scripts', 'hero_banner_css' );
+
+function post_list( $query ){
+	if ( is_post_type_archive( 'products' )){
+		$query->set( 'posts_per_page', 16);
+		return;
+	}
 }
-add_action( 'wp_enqueue_scripts', 'about_hero_banner' );
+add_action( 'pre_get_posts', 'post_list', 1);

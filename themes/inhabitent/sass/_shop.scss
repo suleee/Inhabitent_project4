@@ -1,3 +1,42 @@
-.page-template-shop .site-content{
-    padding-top: 100px;
+.post-type-archive .site-content {
+    #primary{
+        width: 100%;
+        margin: auto;
+    }
+    .page-header {
+        text-align: center;
+        border-bottom: 1px dashed grey;
+        .product-type-list {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            list-style-type: none;
+            // width: 200px;
+            margin: auto;
+            // li{
+            //     margin: 0 5px 0 5px;
+            // }
+        }
+    }
+    .proudct-posts {
+        display: flex;
+        width: 1020px;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+        .posts {
+            border: 1px solid black;
+            margin: 10px;
+            flex: 0 1 23%;
+            max-width: 23%;
+            .thumbnail-wrapper {
+                // height: 250px;
+                // background-color: grey;
+                overflow: hidden;
+                // img{
+                //     max-height: 250px;
+                // }
+            }
+        }
+    }
 }
