@@ -17,12 +17,12 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
 				<div class="entry-header">
-					<div class="single-product-page">
+					
 						<?php if ( has_post_thumbnail() ) : ?>
                                 <div class="single-product-image">
                                 <?php the_post_thumbnail( ); ?>
                                 </div>
-
+                                <div class="single-product-page">
                                 <div class="single-product-content">
                                 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

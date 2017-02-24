@@ -39,7 +39,9 @@ get_header(); ?>
                             $url = get_term_link ($term->slug , 'product_type');              
                     	?>    
 						<li class="product-list">                   
-                        <a href='<?php echo $url?>' class='button'><h2><?php echo $term->name; ?></h2></a>
+                        <a href='<?php echo $url?>' class='button'>
+						
+						<h2><?php echo $term->name; ?></h2></a>
 						</li>
                     <?php
                         endforeach;
@@ -59,6 +61,7 @@ get_header(); ?>
 
 						<div class="title">
 							<?php the_title(); ?>
+							..........
 							<?php echo CFS()->get( 'cost' ); ?>
 						</div>
 					</div>

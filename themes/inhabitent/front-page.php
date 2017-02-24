@@ -57,8 +57,8 @@ get_header(); ?>
       <div class="entry-meta">
         <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
       </div><!-- .entry-meta -->
-      <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?> 
-      <div><a class="read-more" href="<?php the_permalink(); ?>"> Read more &#8594 </a></div>
+      <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+      <a class="read-more" href="<?php the_permalink(); ?>"> Read more </a>
    </div>
     </div>
     <?php endforeach; wp_reset_postdata(); ?>
@@ -66,7 +66,7 @@ get_header(); ?>
 
 
     </div>
-    <div class="w">
+    <div class="latest">
       <h2> Latest Adventures</h2>
     </div>
 

@@ -2,6 +2,7 @@
 # Content
 --------------------------------------------------------------*/
 
+
 /* Posts and pages */
 
 .sticky {
@@ -12,7 +13,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -32,6 +33,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -39,18 +41,28 @@
 	display: none;
 }
 
+
 /* Comments */
 
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
 }
 
+.blog {
+	#primary {
+		width: 70%;
+		// margin-right: 0;
+		padding: 50px 50px 0 50px;
+	}
+}
 
-#primary{
-	width: 70%;
-	// margin-right: 0;
-	padding: 50px 50px 0 50px;
+.page-template-default {
+	#primary {
+		width: 70%;
+		padding: 50px 50px 0 50px;
+	}
 }

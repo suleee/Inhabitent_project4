@@ -13,77 +13,104 @@
 
 .home .site-content {
 	padding-top: 0px;
-}
-
-.shopstufftitle {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 	h2 {
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 35px;
+		color: #2f1339;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
 		min-width: 100%;
 		text-align: center;
 	}
-	.taxonomy_loop {
+	.shopstufftitle {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		.category-wrappper {
-			padding: 20px;
-			border: 1px solid #a1a1a1;
-			border-top: 3px solid #a1a1a1;
-			margin: 0 10px 0 10px;
-			width: 250px;
-			text-align: center;
-			img {
-				width: 70px;
-			}
-			.category-link {
-				color: white;
-				text-decoration: none;
-				background-color: #248A83;
-				padding: 10px;
+		width: 1120px;
+		margin: auto;
+		.taxonomy_loop {
+			display: flex;
+			justify-content: center;
+			margin: 0 30px 20px 30px;
+			.category-wrappper {
+				padding: 15px 15px 25px 15px;
+				border: 1px solid #e1e1e1;
+				border-top: 5px solid #e1e1e1;
+				margin: 0 10px 0 10px;
+				width: 23.5%;
+				text-align: center;
+				&:hover {
+					border: 1px solid #d99054;
+					border-top: 5px solid #d99054;
+				}
+				p {
+					margin-bottom: 15px;
+				}
+				img {
+					width: 70px;
+				}
+				.category-link {
+					color: white;
+					text-decoration: none;
+					background-color: #248A83;
+					padding: 10px 20px 10px 20px;
+				}
 			}
 		}
 	}
-}
-
-.inhabitent-journal-posts {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	h2 {
-		min-width: 100%;
-		text-align: center;
-	}
-	.frontpageposts {
+	.inhabitent-journal-posts {
 		display: flex;
-		.journal-wrapper {
-			margin: 0 5px 0 5px;
-			border: 1px solid #a1a1a1;
-			max-width: 340px;
-			overflow: hidden;
-			.thumbnail-wrapper {
-				width: 340px;
-				height: 245px;
-				background-color: #a1a1a1;
-				img {
-					height: 240px;
+		flex-wrap: wrap;
+		justify-content: center;
+		h2 {
+			min-width: 100%;
+			text-align: center;
+		}
+		a {
+			color: black;
+			text-transform: uppercase;
+			font-size: 12px;
+			padding: 10px 20px 10px 20px;
+		}
+		.frontpageposts {
+			display: flex;
+			.journal-wrapper {
+				margin: 0 5px 0 5px;
+				border: 1px solid #e1e1e1;
+				max-width: 340px;
+				overflow: hidden;
+				.thumbnail-wrapper {
+					width: 340px;
+					height: 245px;
+					background-color: #e1e1e1;
+					img {
+						height: 240px;
+					}
 				}
-			}
-			.journal-text-wrapper {
-				padding: 10px;
-				.entry-title {
-					font-size: 20px;
-					margin-bottom: 10px;
-					margin-top: 5px;
-				}
-				.entry-meta {
-					font-size: 10px;
-					a{
-						color: black;
-						background-color: green;
+				.journal-text-wrapper {
+					padding: 10px 10px 20px 10px;
+					.entry-title {
+						font-size: 20px;
+						margin-bottom: 10px;
+						margin-top: 5px;
+					}
+					.entry-title {
+						color: #248A83;
+						font-size: 20px;
+						line-height: 25px;
+						text-transform: uppercase;
+						letter-spacing: 2px;
+						margin-bottom: 20px;
+					}
+					.entry-meta {
+						font-size: 12px;
 					}
 				}
 			}
 		}
+	}
+	.latest {
+		margin: auto;
 	}
 }

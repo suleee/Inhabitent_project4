@@ -61,8 +61,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "elements";
 @import "forms";
 
-@import 'shop';
+
 @import "frontpage";
+@import "shop-terms";
+@import 'shop';
+@import 'shop-single';
+@import 'journal-single';
 @import "about";
 @import "journal";
 @import 'singlepostpage';

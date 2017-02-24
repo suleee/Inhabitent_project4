@@ -1,0 +1,46 @@
+.tax-product_type {
+    #primary {
+        width: 100%;
+        // margin: auto;
+        padding: 40px 20px 80px 20px;
+    }
+    .page-header {
+        text-align: center;
+        border-bottom: 1px dashed #e1e1e1;
+        margin-bottom: 50px;
+    }
+    .product-posts {
+        display: flex;
+    }
+    .page-header {
+        text-align: center;
+    }
+}
+
+.product-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .posts {
+        border: 1px solid #e1e1e1;
+        margin-bottom: 10px;
+        flex: 0 1 23%;
+        max-width: 23%;
+        height: 300px;
+        overflow: hidden;
+        .thumbnail-wrapper {
+            height: 250px;
+            background-color: #e1e1e1;
+            img {
+                max-height: 250px;
+                max-width: none;
+                width: auto;
+                transform: translate(-10%, 0%);
+            }
+        }
+        .title {
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+}
