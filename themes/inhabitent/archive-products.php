@@ -14,19 +14,19 @@ get_header(); ?>
 
 		<header class="page-header">
 			<?php
-			the_archive_title( '<h1 class="page-title shopstuff">', '</h1>' );
+			
+			function archive_product_title( $title) {
+			if(is_post_type_archive('products')){
+				$title = 'Shop Stuff';
+				}
+				return $title;
+				}
+				add_filter('get_the_archive_title', 'archive_product_title');
+				the_archive_title( '<h1 class="page-title shopstuff">', '</h1>' );
 
 
-			// function archive_product_title( $title) {
-			// if(is_post_type_archive('product')){
-			// $title = single_term_title('product', false);
-			// }
-			// return $title;
-			// }
-			// add_filter('get_the_archive_title', 'archive_product_title');
-
-			// the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			// ?>
+				the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			?>
 
 			<ul class="product-type-list">
                     <?php    
@@ -38,7 +38,7 @@ get_header(); ?>
                         foreach ($terms as $term) :
                             $url = get_term_link ($term->slug , 'product_type');              
                     	?>    
-						<li class="product-type-list">                   
+						<li class="product-list">                   
                         <a href='<?php echo $url?>' class='button'><h2><?php echo $term->name; ?></h2></a>
 						</li>
                     <?php
@@ -50,11 +50,11 @@ get_header(); ?>
 			<!--<?php /* Start the Loop */ ?>-->
 				
 				
-			<div class="proudct-posts">
+			<div class="product-posts">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="posts">
 						<div class="thumbnail-wrapper">
-							<a href = "# "><?php the_post_thumbnail( 'large' ); ?></a>
+							<a href = "<?php the_permalink(); ?> " rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
 						</div>
 
 						<div class="title">
@@ -64,7 +64,9 @@ get_header(); ?>
 					</div>
 				<?php endwhile; ?>
 			</div>
-		
+			<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 		<?php endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->

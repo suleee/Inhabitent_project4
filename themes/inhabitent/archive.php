@@ -14,6 +14,15 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
+
+					function archive_title( $title) {
+					if(is_post_type_archive('do')){
+						$title = 'Sheeeop Stuff';
+						}
+						return $title;
+						}
+					add_filter('get_the_archive_title', 'archive_title');
+					
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>

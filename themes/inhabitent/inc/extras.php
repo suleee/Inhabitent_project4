@@ -115,9 +115,12 @@ function hero_banner_css() {
 } add_action('wp_enqueue_scripts', 'hero_banner_css' );
 
 function post_list( $query ){
-	if ( is_post_type_archive( 'products' )){
+	if ($query->is_main_query() && is_post_type_archive( 'products' )){
+		$query->set( 'orderby', 'title');
+		$query->set( 'post_type', 'products');
+		$query->set( 'order', 'ASC');
 		$query->set( 'posts_per_page', 16);
-		return;
 	}
 }
 add_action( 'pre_get_posts', 'post_list', 1);
+

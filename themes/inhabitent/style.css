@@ -694,7 +694,7 @@ textarea {
     list-style-type: none;
     margin: auto; }
 
-.post-type-archive .site-content .proudct-posts {
+.post-type-archive .site-content .product-posts {
   display: -ms-flexbox;
   display: flex;
   width: 1020px;
@@ -703,13 +703,13 @@ textarea {
   margin: auto;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .post-type-archive .site-content .proudct-posts .posts {
+  .post-type-archive .site-content .product-posts .posts {
     border: 1px solid black;
     margin: 10px;
     -ms-flex: 0 1 23%;
         flex: 0 1 23%;
     max-width: 23%; }
-    .post-type-archive .site-content .proudct-posts .posts .thumbnail-wrapper {
+    .post-type-archive .site-content .product-posts .posts .thumbnail-wrapper {
       overflow: hidden; }
 
 /*--------------------------------------------------------------
@@ -741,8 +741,8 @@ textarea {
         justify-content: center; }
     .shopstufftitle .taxonomy_loop .category-wrappper {
       padding: 20px;
-      border: 1px solid grey;
-      border-top: 3px solid grey;
+      border: 1px solid #a1a1a1;
+      border-top: 3px solid #a1a1a1;
       margin: 0 10px 0 10px;
       width: 250px;
       text-align: center; }
@@ -769,13 +769,13 @@ textarea {
     display: flex; }
     .inhabitent-journal-posts .frontpageposts .journal-wrapper {
       margin: 0 5px 0 5px;
-      border: 1px solid grey;
+      border: 1px solid #a1a1a1;
       max-width: 340px;
       overflow: hidden; }
       .inhabitent-journal-posts .frontpageposts .journal-wrapper .thumbnail-wrapper {
         width: 340px;
         height: 245px;
-        background-color: grey; }
+        background-color: #a1a1a1; }
         .inhabitent-journal-posts .frontpageposts .journal-wrapper .thumbnail-wrapper img {
           height: 240px; }
       .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper {
@@ -786,6 +786,9 @@ textarea {
           margin-top: 5px; }
         .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-meta {
           font-size: 10px; }
+          .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-meta a {
+            color: black;
+            background-color: green; }
 
 .page-template-singlepage-template .site-content {
   padding-top: 0px; }

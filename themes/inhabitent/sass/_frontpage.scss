@@ -28,8 +28,8 @@
 		justify-content: center;
 		.category-wrappper {
 			padding: 20px;
-			border: 1px solid grey;
-			border-top: 3px solid grey;
+			border: 1px solid #a1a1a1;
+			border-top: 3px solid #a1a1a1;
 			margin: 0 10px 0 10px;
 			width: 250px;
 			text-align: center;
@@ -58,13 +58,13 @@
 		display: flex;
 		.journal-wrapper {
 			margin: 0 5px 0 5px;
-			border: 1px solid grey;
+			border: 1px solid #a1a1a1;
 			max-width: 340px;
 			overflow: hidden;
 			.thumbnail-wrapper {
 				width: 340px;
 				height: 245px;
-				background-color: grey;
+				background-color: #a1a1a1;
 				img {
 					height: 240px;
 				}
@@ -78,6 +78,10 @@
 				}
 				.entry-meta {
 					font-size: 10px;
+					a{
+						color: black;
+						background-color: green;
+					}
 				}
 			}
 		}
