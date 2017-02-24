@@ -89,7 +89,11 @@ function red_starter_scripts() {
 
 	//true goes bottom
 
+
 	// comment button
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );

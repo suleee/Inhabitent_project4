@@ -74,7 +74,7 @@ a {
 		white-space: nowrap;
 	}
 	.right-menu {
-		width: 350px;
+		width: 540px;
 	}
 	ul {
 		display: none;
@@ -175,3 +175,19 @@ a {
 	height: 0px;
 }
 
+.header-search {
+	display: flex;
+}
+
+input {
+	height: 15px;
+}
+
+.search-form {
+	fieldset {
+		border: 0px;
+		button {
+			visibility: hidden;
+		}
+	}
+}

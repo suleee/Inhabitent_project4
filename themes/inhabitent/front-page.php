@@ -68,6 +68,12 @@ get_header(); ?>
     </div>
     <div class="latest">
       <h2> Latest Adventures</h2>
+      <div class="image-container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
     </div>
 
  </section>

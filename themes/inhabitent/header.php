@@ -39,6 +39,7 @@
 
 						<div class="header-search">
 							<a class="search-icon"><i class="fa fa-search"></i></a>
+								<?php get_search_form( )?>
 							<!--<?php get_search_form(); ?>-->
 						</div>
 					</div>

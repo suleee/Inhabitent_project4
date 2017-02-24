@@ -352,7 +352,7 @@ a {
     text-indent: 100%;
     white-space: nowrap; }
   .main-navigation .right-menu {
-    width: 350px; }
+    width: 540px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -425,6 +425,18 @@ a {
 
 .site-header {
   height: 0px; }
+
+.header-search {
+  display: -ms-flexbox;
+  display: flex; }
+
+input {
+  height: 15px; }
+
+.search-form fieldset {
+  border: 0px; }
+  .search-form fieldset button {
+    visibility: hidden; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1011,6 +1023,30 @@ textarea {
     .single .journal .entry-header .entry-meta a {
       color: white; }
 
+.search .site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search #primary {
+  width: 70%; }
+
+.search #secondary {
+  width: 30%; }
+
+.search .search-form {
+  padding: 30px; }
+
+.search .page-content p {
+  display: none; }
+
+.search fieldset {
+  padding-top: 40px;
+  border: none; }
+  .search fieldset button {
+    display: none; }
+  .search fieldset input {
+    background-color: #e1e1e1; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1056,6 +1092,9 @@ textarea {
 .page-template-default #primary {
   width: 70%;
   padding: 50px 50px 0 50px; }
+
+button {
+  background-color: green; }
 
 /*--------------------------------------------------------------
 # Media

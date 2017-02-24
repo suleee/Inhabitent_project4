@@ -34,10 +34,12 @@ get_header(); ?>
 			<?php endif; ?>
 			<?php if ( comments_open() || get_comments_number() ):
 			comments_template();
+	
+
 			endif;
 			?>
 			<?php get_header();?>
-
+	
 		</main><!-- #main -->
 		
 	</div><!-- #primary -->
