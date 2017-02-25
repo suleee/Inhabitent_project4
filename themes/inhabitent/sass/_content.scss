@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 
+
 /* Posts and pages */
 
 .sticky {
@@ -56,17 +57,39 @@
 	#primary {
 		width: 70%;
 		// margin-right: 0;
-		padding: 50px 50px 0 50px;
+		// padding: 50px 50px 0 50px;
 	}
 }
 
 .page-template-default {
-	#primary {
+	
+	#primary{
 		width: 70%;
-		padding: 50px 50px 0 50px;
+		padding-top: 100px;
+	
+	}
+	#secondary {
+		width: 30%;
+		padding-top: 100px;
 	}
 }
 
-button{
-	background-color: green;
+.comment-form-comment {
+	textarea {
+		background-color: #f4f4f4;
+	}
+}
+
+.form-submit {
+	input {
+		background-color: $color__green;
+		text-shadow: none;
+		box-shadow: none;
+		border-radius: 0px;
+		padding: 15px 30px;
+		border: 0px;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: white;
+	}
 }

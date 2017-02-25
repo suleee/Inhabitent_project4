@@ -56,12 +56,12 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="posts">
 						<div class="thumbnail-wrapper">
-							<a href = "<?php the_permalink(); ?> " rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
+							<a href = "<?php the_permalink(); ?> " rel="bookmark"><?php the_post_thumbnail( ); ?></a>
 						</div>
 
 						<div class="title">
 							<?php the_title(); ?>
-							..........
+							....
 							<?php echo CFS()->get( 'cost' ); ?>
 						</div>
 					</div>

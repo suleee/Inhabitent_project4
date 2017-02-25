@@ -37,11 +37,9 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 
-						<div class="header-search">
-							<a class="search-icon"><i class="fa fa-search"></i></a>
+						<span class="header-search">
 								<?php get_search_form( )?>
-							<!--<?php get_search_form(); ?>-->
-						</div>
+						</span>
 					</div>
 				</div>
 			</nav><!-- #site-navigation -->

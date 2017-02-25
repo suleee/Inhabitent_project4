@@ -1,6 +1,12 @@
 .post-template-default {
-    h1{
+     #secondary{
+        padding-top: 50px;
+    }
+    h1 {
         color: white;
+    }
+    .site-content {
+        padding-top: 70px;
     }
     .journal {
         padding: 50px;
@@ -9,4 +15,8 @@
             width: 30%;
         }
     }
+    .comment-form-comment {
+        text-transform: uppercase;
+    }
+
 }

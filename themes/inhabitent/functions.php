@@ -88,6 +88,16 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
 
 	//true goes bottom
+	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+
+	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'red_comments', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true);
+
+	wp_localize_script( 'red_comments', 'red_vars', array(
+		'ajax_url' => admin_url( 'admin-ajax.php' ),
+		'comment_nonce' => wp_create_nonce( 'red_comment_status' ),
+		'post_id' => get_the_ID()
+	));
 
 
 	// comment button
@@ -109,13 +119,58 @@ add_action('admin_menu', 'inhabitent_remove_submenus', 110);
 
 
 
-function wpdocs_excerpt_more( $more ) {
-    return sprintf( ' [...] <p><a class="read-more" href="%1$s">%2$s</a></p>',
-        get_permalink( get_the_ID() ),
-        __( 'Read More &#8594;', 'textdomain' )
-    );
+
+/**
+ * Customize excerpt length and style.
+ *
+ * @param  string The raw post content.
+ * @return string
+ */
+function red_wp_trim_excerpt( $text ) {
+	$raw_excerpt = $text;
+	
+	if ( '' == $text ) {
+		// retrieve the post content
+		$text = get_the_content('');
+		
+		// delete all shortcode tags from the content
+		$text = strip_shortcodes( $text );
+		
+		$text = apply_filters( 'the_content', $text );
+		$text = str_replace( ']]>', ']]&gt;', $text );
+		
+		// indicate allowable tags
+		$allowed_tags = '<p>,<a>,<em>,<strong>,<blockquote>,<cite>';
+		$text = strip_tags( $text, $allowed_tags );
+		
+		// change to desired word count
+		$excerpt_word_count = 50;
+		$excerpt_length = apply_filters( 'excerpt_length', $excerpt_word_count );
+		
+		// create a custom "more" link
+		$excerpt_end = '<span>[...]</span><p><a href="' . get_permalink() . '" class="read-more">Read more &rarr;</a></p>'; // modify excerpt ending
+		$excerpt_more = apply_filters( 'excerpt_more', ' ' . $excerpt_end );
+		
+		// add the elipsis and link to the end if the word count is longer than the excerpt
+		$words = preg_split( "/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY );
+		
+		if ( count( $words ) > $excerpt_length ) {
+			array_pop( $words );
+			$text = implode( ' ', $words );
+			$text = $text . $excerpt_more;
+		} else {
+			$text = implode( ' ', $words );
+		}
+	}
+	
+	return apply_filters( 'wp_trim_excerpt', $text, $raw_excerpt );
 }
-add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
+add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+
+
+
 
 
 /**

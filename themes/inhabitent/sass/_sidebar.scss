@@ -1,30 +1,54 @@
-// .journal{
-//     display: flex;
-// }
-
-.side_bar_enabler{
-	display: flex;
-	width: 100%;
-
+.side_bar_enabler {
+    display: flex;
+    width: 100%;
 }
 
-#secondary{
+#secondary {
     border-left: 1px solid #d3d3d3;
-    padding: 50px 40px 0 40px; 
+    padding: 0px 40px 0 40px;
     width: 30%;
     margin-right: 0;
-    ul{
+    ul {
         margin: 0;
         padding: 0;
     }
-    li{
+    li {
         list-style-type: none;
         text-decoration: none;
     }
-    h2{
+    h2 {
         margin: 0px;
     }
-    p{
-        margin: 0;
+    .widget {
+        p {
+            margin: 20px 0;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+    .textwidget {
+        // margin: 10px 0;
+        p {
+            color: $color__green;
+            i {
+                color: $font__color;
+            }
+        }
+        .address {
+            color: $font__color;
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        color: $color__purple;
+    }
+}
+
+.widget {
+    li {
+        a {
+            text-decoration: none;
+        }
     }
 }

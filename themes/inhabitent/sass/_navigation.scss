@@ -45,7 +45,6 @@ a {
 
 .main-navigation {
 	position: fixed;
-	height: 70px;
 	z-index: 1;
 	display: block;
 	float: left;
@@ -61,20 +60,30 @@ a {
 		margin: 0 auto;
 		max-width: 1120px;
 	}
+	.logo{
+		width: 60%;
+	}
 	.header-logo {
-		// margin-left: 50px;
 		display: flex;
-		// align-items: center;    
 		height: 100%;
-		width: 70px;
+		width: 60px;
 		text-align: center;
-		padding-top: 10px;
+		
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
 	}
 	.right-menu {
-		width: 540px;
+		width: 40%;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		text-transform: uppercase;
+	}
+	.menu-main-menu-container {
+		position: absolute;
+		right: 20px;
+		top: 7px;
 	}
 	ul {
 		display: none;
@@ -175,19 +184,18 @@ a {
 	height: 0px;
 }
 
+fieldset {
+	border: none;
+}
+
 .header-search {
-	display: flex;
-}
-
-input {
-	height: 15px;
-}
-
-.search-form {
-	fieldset {
-		border: 0px;
-		button {
-			visibility: hidden;
-		}
+	label {
+		position: absolute;
+		top: 10px;
+		
+	}
+	.search-field {
+		background: rgba(0, 0, 0, 0);
+		border: none;
 	}
 }

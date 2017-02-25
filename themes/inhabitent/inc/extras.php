@@ -114,6 +114,32 @@ function hero_banner_css() {
 
 } add_action('wp_enqueue_scripts', 'hero_banner_css' );
 
+
+
+
+// feature image
+function advanture_image() {
+	if(!is_page_template('advanture.php')){
+		return;
+	}
+
+	$image = CFS()->get( 'image' );
+		if(!$image){
+			return;
+		}
+	$hero_css = ".page-template-advanture .advanture_header {
+        background:
+            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            url({$image}) no-repeat center bottom;
+        background-size: cover, cover;
+}";
+	wp_add_inline_style( 'red-starter-style', $hero_css );
+
+} add_action('wp_enqueue_scripts', 'advanture_image' );
+
+
+
+
 function post_list( $query ){
 	if ($query->is_main_query() && is_post_type_archive( 'products' )){
 		$query->set( 'orderby', 'title');

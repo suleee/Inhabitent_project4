@@ -57,7 +57,8 @@ get_header(); ?>
       <div class="entry-meta">
         <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
       </div><!-- .entry-meta -->
-      <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+      <a class="journal-title" href="<?php the_permalink(); ?>"><?php the_title( '<h3 class="entry-title">', '</h3>' ); ?></a>
+      
       <a class="read-more" href="<?php the_permalink(); ?>"> Read more </a>
    </div>
     </div>
@@ -69,10 +70,14 @@ get_header(); ?>
     <div class="latest">
       <h2> Latest Adventures</h2>
       <div class="image-container">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="firstbox"></div>
+            <div class="container2">
+            <div class="secondbox"></div>
+              <div class="container3">
+              <div class="thirdbox"></div>
+              <div class="fourthbox"></div>
+            </div>
+          </div>
         </div>
     </div>
 
