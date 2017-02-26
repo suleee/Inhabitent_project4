@@ -1,34 +1,30 @@
 .page-template-singlepage-template .site-content {
 	padding-top: 0px;
-}
-
-.about_header {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.about-hero-text {
-	color: white;
-	font-size: 50px;
-	text-transform: uppercase;
-}
-
-.about_text {
-	text-align: center;
-	width: 750px;
-	margin: auto;
-	// font-size: 17px;
-	margin-bottom: 50px;
-	// width: 600px;
-	h2 {
-		color: $color__purple;
-		text-transform: uppercase;
-		font-size: 35px;
+	.about_header {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-	p {
-		// width: 900px;
-		text-align: left;
+	.about-hero-text {
+		color: white;
+		font-size: 50px;
+		text-transform: uppercase;
+		font-family: $font__accent;
+	}
+	.about_text {
+		text-align: center;
+		width: 750px;
+		margin: auto;
+		margin-bottom: 50px;
+		h2 {
+			color: $color__purple;
+			font-family: $font__accent;
+			text-transform: uppercase;
+			font-size: 35px;
+		}
+		p {
+			text-align: left;
+		}
 	}
 }

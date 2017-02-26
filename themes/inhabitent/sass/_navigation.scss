@@ -46,44 +46,39 @@ a {
 .main-navigation {
 	position: fixed;
 	z-index: 1;
-	display: block;
-	float: left;
+	// display: block;
+	// float: left;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 10px 0 10px 10px;
+	// padding: 10px 0 10px 10px;
 	border-bottom: 1px solid #d3d3d3;
-	.container {
-		height: 50px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0 auto;
-		max-width: 1120px;
-	}
-	.logo{
-		width: 60%;
+	.logo {
+		width: 10%;
+		h1 {
+			margin: auto;
+		}
 	}
 	.header-logo {
 		display: flex;
 		height: 100%;
 		width: 60px;
 		text-align: center;
-		
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
 	}
 	.right-menu {
-		width: 40%;
+		width: 90%;
+		padding-top: 10px;
 		display: flex;
 		justify-content: flex-end;
-		position: relative;
 		text-transform: uppercase;
 	}
-	.menu-main-menu-container {
-		position: absolute;
-		right: 20px;
-		top: 7px;
+	.container {
+		width: 1120px;
+		height: 50px;
+		display: flex;
+		margin: 0 auto;
 	}
 	ul {
 		display: none;
@@ -139,6 +134,8 @@ a {
 
 .menu li {
 	padding-right: 20px;
+	font-family: $font__accent;
+	font-size: $font__size;
 }
 
 
@@ -186,13 +183,15 @@ a {
 
 fieldset {
 	border: none;
+	padding: 0;
 }
-
+input:focus{
+	border: none;
+}
 .header-search {
 	label {
 		position: absolute;
 		top: 10px;
-		
 	}
 	.search-field {
 		background: rgba(0, 0, 0, 0);

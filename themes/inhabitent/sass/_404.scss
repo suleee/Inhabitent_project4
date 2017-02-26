@@ -1,5 +1,6 @@
 .error404 {
     #content {
+        padding-top: 50px;
         width: 1120px;
         display: flex;
         margin: auto;
@@ -9,7 +10,7 @@
     }
     #primary {
         width: 70%;
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .page-content {
         input {
@@ -19,14 +20,21 @@
         }
     }
     #secondary {
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-left: 50px;
         width: 30%;
+        border-left: 1px solid $color__border;
     }
     .page-content p {
         padding: 50px 20px 20px 20px;
     }
-    h1,
+    h1 {
+        font-family: $font__accent;
+        text-transform: uppercase;
+    }
     h2 {
+        color: $color__purple;
+        font-family: $font__accent;
         text-transform: uppercase;
     }
     ul {
@@ -35,6 +43,9 @@
     }
     li {
         list-style: none;
+        a {
+            text-decoration: none;
+        }
     }
     fieldset {
         padding: 0;

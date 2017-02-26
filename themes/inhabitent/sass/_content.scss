@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 
-
 /* Posts and pages */
 
 .sticky {
@@ -62,11 +61,9 @@
 }
 
 .page-template-default {
-	
-	#primary{
+	#primary {
 		width: 70%;
 		padding-top: 100px;
-	
 	}
 	#secondary {
 		width: 30%;
@@ -91,5 +88,6 @@
 		font-size: 15px;
 		text-transform: uppercase;
 		color: white;
+		font-family: $font__accent;
 	}
 }

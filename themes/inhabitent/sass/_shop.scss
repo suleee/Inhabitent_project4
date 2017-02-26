@@ -1,4 +1,4 @@
-.post-type-archive .site-content {
+.post-type-archive-products {
     #primary {
         width: 1120px;
         padding-top: 100px;
@@ -9,6 +9,7 @@
         border-bottom: 1px dashed #c8c8c8;
         margin-bottom: 50px;
         h1 {
+            font-family: $font__accent;
             margin: 0 auto;
             text-transform: uppercase;
             font-size: 36px;
@@ -24,6 +25,7 @@
             li {
                 padding: 0 20px 0 20px;
                 h2 {
+                    font-family: $font__accent;
                     font-weight: 500;
                     text-transform: uppercase;
                     font-size: 18px;

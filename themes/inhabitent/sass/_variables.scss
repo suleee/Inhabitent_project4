@@ -1,9 +1,10 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$base__line-hight: 1.75rem;
+$width: 1120px;
 
 // Colors
-
 $color__background-body: #ffffff;
 $color__text-main: #404040;
 
@@ -33,11 +34,13 @@ $color__dashedborder: #c8c8c8;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: "merriweather", serif;
 $font__code: "merriweather";
-$font__accent: "novovento";
+$font__accent: "novocento", sans-serif ;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 $font__size: 16px;
 $font__color: #404040;
+
+

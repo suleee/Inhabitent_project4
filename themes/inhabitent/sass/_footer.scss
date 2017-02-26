@@ -1,35 +1,53 @@
-.site-footer{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.site-footer {
     background: url('../../images/dark-wood@2x.png');
-	height: 300px;
-    width: 100%;
-    padding: 50px 20px 0 20px;
-    // align-content: flex-start;
-
-    h3{
+    height: 300px;
+    padding: 50px 0 0 0;
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+        width: $width;
+    }
+    h3 {
+        font-family: $font__accent;
         margin-top: 0;
+        margin-bottom: 0px;
         color: #d99054;
+        text-transform: uppercase;
     }
-    p{
+    span {
+        font-weight: bold;
+    }
+    p {
         color: white;
+        margin: 15px 0 15px 0;
     }
-    .contactInfo{
+    .sns-icon {
+        font-size: 22px;
+        span {
+            margin-right: 4px;
+        }
+    }
+    .contactInfo {
         flex-basis: 25%;
     }
-    .businessHour{
+    .businessHour {
         flex-basis: 25%;
     }
-    .footerLogo{
+    .footerLogo {
         flex-basis: 50%;
-
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
-        img{
+        img {
             width: 250px;
         }
     }
+    .copyright{
+        font-family: $font__accent;
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 14px;
+    }
 }
-

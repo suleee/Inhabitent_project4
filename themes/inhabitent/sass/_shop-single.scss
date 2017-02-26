@@ -17,6 +17,7 @@
         }
     }
     h1 {
+        font-family: $font__accent;
         margin: 0;
         color: #d99054;
         text-transform: uppercase;
@@ -36,6 +37,7 @@
         line-height: 25px;
     }
     .social-media {
+        font-family: $font__accent;
         color: black;
         text-transform: uppercase;
         font-size: 14px;
