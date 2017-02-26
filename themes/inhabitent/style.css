@@ -711,6 +711,7 @@ textarea {
 .home .site-content {
   padding-top: 0px; }
   .home .site-content h2 {
+    font-family: "novocento", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 35px;
@@ -741,6 +742,10 @@ textarea {
         margin: 0 10px 0 10px;
         width: 23.5%;
         text-align: center; }
+        .home .site-content .shopstufftitle .taxonomy_loop .category-wrappper a {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-family: "novocento", sans-serif; }
         .home .site-content .shopstufftitle .taxonomy_loop .category-wrappper:hover {
           border: 1px solid #d99054;
           border-top: 5px solid #d99054; }
@@ -788,6 +793,10 @@ textarea {
             height: 240px; }
         .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper {
           padding: 10px 10px 20px 10px; }
+          .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper h3 {
+            font-family: "novocento", sans-serif; }
+          .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper a {
+            font-family: "novocento", sans-serif; }
           .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .journal-title {
             padding: 0;
             text-decoration: none; }
@@ -810,6 +819,8 @@ textarea {
             margin-bottom: 20px; }
           .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-meta {
             font-size: 12px; }
+            .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-meta .byline {
+              visibility: hidden; }
   .home .site-content .latest {
     margin: auto; }
   .home .site-content .image-container {
@@ -824,6 +835,8 @@ textarea {
     -ms-flex-pack: justify;
         justify-content: space-between; }
     .home .site-content .image-container .firstbox {
+      background: url("../../images/home-hero.jpg") center center no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center 0px;
+      background-size: auto, contain, cover;
       width: 49%;
       background-color: yellow; }
     .home .site-content .image-container .container2 {

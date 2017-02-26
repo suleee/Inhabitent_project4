@@ -5,12 +5,8 @@
 
 /* Front page */
 
-// margin: 0 auto;
-// width: 1120px;
 .home {
-	// #content{
-	// 	width: 0;
-	// }
+
 	.home-hero {
 		background: url('../../images/logos/inhabitent-logo-full.svg') center center no-repeat, linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/home-hero.jpg') no-repeat center 0px;
 		background-size: auto, contain, cover;
@@ -21,6 +17,7 @@
 .home .site-content {
 	padding-top: 0px;
 	h2 {
+		font-family: $font__accent;
 		font-weight: 400;
 		text-transform: uppercase;
 		font-size: 35px;
@@ -47,6 +44,11 @@
 				margin: 0 10px 0 10px;
 				width: 23.5%;
 				text-align: center;
+				a {
+					text-transform: uppercase;
+					font-size: 14px;
+					font-family: $font__accent;
+				}
 				&:hover {
 					border: 1px solid $color__orange;
 					border-top: 5px solid $color__orange;
@@ -102,6 +104,12 @@
 				}
 				.journal-text-wrapper {
 					padding: 10px 10px 20px 10px;
+					h3 {
+						font-family: $font__accent;
+					}
+					a {
+						font-family: $font__accent;
+					}
 					.journal-title {
 						padding: 0;
 						text-decoration: none;
@@ -129,6 +137,9 @@
 					}
 					.entry-meta {
 						font-size: 12px;
+						.byline {
+							visibility: hidden;
+						}
 					}
 				}
 			}
@@ -146,6 +157,9 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		.firstbox {
+			background: url('../../images/home-hero.jpg') center center no-repeat, linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/home-hero.jpg') no-repeat center 0px;
+		background-size: auto, contain, cover;
+		// height: 700px;
 			width: 49%;
 			background-color: yellow;
 		}
