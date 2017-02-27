@@ -1,4 +1,4 @@
-<?php /* Template Name: singlepage-template */ ?>
+<?php /* Template Name: adventure*/ ?>
 <!-- this name is to setup the custom page template -->
 
 
@@ -10,16 +10,13 @@
  */
 
 get_header(); ?>
-	<section class="advanture_header">
-		
-        <h1 class="adavanture"> About </h1>
-
-	</section>
-    
-   <section class="advanture_text">
-
+<section class="adventure_header">
+        
+</section>
+        <div class="adventure_text">
+                <h1 class="adavanture"> Getting Back to Nature in a Canoe</h1>
 		<?php echo CFS()->get( 'featuretext' ); ?>
-    </section>
+        </div>
 
 
 <?php get_footer(); ?>

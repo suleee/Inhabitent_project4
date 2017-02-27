@@ -118,24 +118,25 @@ function hero_banner_css() {
 
 
 // feature image
-function advanture_image() {
-	if(!is_page_template('advanture.php')){
+function adventure_image() {
+	if(!is_page_template('adventure.php')){
 		return;
 	}
 
-	$image = CFS()->get( 'image' );
+	$image = CFS()->get( 'ad_image' );
 		if(!$image){
 			return;
 		}
-	$hero_css = ".page-template-advanture .advanture_header {
+	$hero_css = ".page-template-adventure .adventure_header{
         background:
-            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            linear-gradient( to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100% ),
             url({$image}) no-repeat center bottom;
         background-size: cover, cover;
+		height: 100vh;
 }";
 	wp_add_inline_style( 'red-starter-style', $hero_css );
 
-} add_action('wp_enqueue_scripts', 'advanture_image' );
+} add_action('wp_enqueue_scripts', 'adventure_image' );
 
 
 

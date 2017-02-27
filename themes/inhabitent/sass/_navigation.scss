@@ -50,12 +50,12 @@ a {
 	// float: left;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.8);
-	// padding: 10px 0 10px 10px;
 	border-bottom: 1px solid #d3d3d3;
 	.logo {
 		width: 10%;
 		h1 {
-			margin: auto;
+			width: 50px;
+			margin: 0;
 		}
 	}
 	.header-logo {
@@ -69,7 +69,7 @@ a {
 	}
 	.right-menu {
 		width: 90%;
-		padding-top: 10px;
+		padding-top: 5px;
 		display: flex;
 		justify-content: flex-end;
 		text-transform: uppercase;
@@ -79,6 +79,7 @@ a {
 		height: 50px;
 		display: flex;
 		margin: 0 auto;
+		padding-top: 10px;
 	}
 	ul {
 		display: none;
@@ -135,7 +136,7 @@ a {
 .menu li {
 	padding-right: 20px;
 	font-family: $font__accent;
-	font-size: $font__size;
+	font-size: 15px;
 }
 
 
@@ -185,9 +186,11 @@ fieldset {
 	border: none;
 	padding: 0;
 }
-input:focus{
+
+input:focus {
 	border: none;
 }
+
 .header-search {
 	label {
 		position: absolute;

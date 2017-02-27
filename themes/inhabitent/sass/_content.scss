@@ -55,30 +55,17 @@
 .blog {
 	#primary {
 		width: 70%;
-		// margin-right: 0;
-		// padding: 50px 50px 0 50px;
-	}
-}
-
-.page-template-default {
-	#primary {
-		width: 70%;
-		padding-top: 100px;
-	}
-	#secondary {
-		width: 30%;
-		padding-top: 100px;
 	}
 }
 
 .comment-form-comment {
 	textarea {
-		background-color: #f4f4f4;
+		background-color: $color__comment-bg;
 	}
 }
 
 .form-submit {
-	input {
+	.submit {
 		background-color: $color__green;
 		text-shadow: none;
 		box-shadow: none;
@@ -89,5 +76,8 @@
 		text-transform: uppercase;
 		color: white;
 		font-family: $font__accent;
+	}
+	&:hover {
+		background-color: red;
 	}
 }

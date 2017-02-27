@@ -20,6 +20,7 @@ $color__link: #248A83;
 $color__link-visited: #248A83;
 $color__link-hover: #2f1339;
 $color__text-hover: #f0e4d1;
+$color__bt-hover: #19625d;
 
 $color__green: #248A83;
 $color__purple: #2f1339;
@@ -30,13 +31,13 @@ $color__mediumgrey: #808080;
 
 $color__border: #e1e1e1;
 $color__dashedborder: #c8c8c8;
-
+$color__comment-bg: #f4f4f4;
 
 // Typography
 
 $font__main: "merriweather", serif;
 $font__code: "merriweather";
-$font__accent: "novocento", sans-serif ;
+$font__accent: "novecentosanswide", sans-serif ;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;

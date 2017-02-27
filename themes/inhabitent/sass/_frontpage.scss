@@ -6,7 +6,6 @@
 /* Front page */
 
 .home {
-
 	.home-hero {
 		background: url('../../images/logos/inhabitent-logo-full.svg') center center no-repeat, linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/home-hero.jpg') no-repeat center 0px;
 		background-size: auto, contain, cover;
@@ -16,6 +15,7 @@
 
 .home .site-content {
 	padding-top: 0px;
+	padding-bottom: 100px;
 	h2 {
 		font-family: $font__accent;
 		font-weight: 400;
@@ -39,8 +39,8 @@
 			margin: 0 30px 20px 30px;
 			.category-wrappper {
 				padding: 15px 15px 25px 15px;
-				border: 1px solid #e1e1e1;
-				border-top: 5px solid #e1e1e1;
+				border: 1px solid $color__border;
+				border-top: 5px solid $color__border;
 				margin: 0 10px 0 10px;
 				width: 23.5%;
 				text-align: center;
@@ -60,7 +60,7 @@
 					width: 70px;
 				}
 				a:hover {
-					background-color: #19625d;
+					background-color: $color__bt-hover;
 				}
 				.category-link {
 					color: white;
@@ -91,13 +91,13 @@
 			display: flex;
 			.journal-wrapper {
 				margin: 0 5px 0 5px;
-				border: 1px solid #e1e1e1;
+				border: 1px solid $color__border;
 				max-width: 340px;
 				overflow: hidden;
 				.thumbnail-wrapper {
 					width: 340px;
 					height: 245px;
-					background-color: #e1e1e1;
+					background-color: $color__border;
 					img {
 						height: 240px;
 					}
@@ -121,6 +121,9 @@
 					}
 					.entry-title:hover {
 						color: $color__purple;
+					}
+					.read-more {
+						font-size: 14px;
 					}
 					.read-more:hover {
 						background-color: $color__green;
@@ -157,17 +160,41 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		.firstbox {
-			background: url('../../images/home-hero.jpg') center center no-repeat, linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/home-hero.jpg') no-repeat center 0px;
-		background-size: auto, contain, cover;
-		// height: 700px;
+			background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/') center center no-repeat;
+			background-size: auto, contain, cover;
+			height: 500px;
 			width: 49%;
 			background-color: yellow;
+			h3 {
+				color: white;
+				font-weight: lighter;
+				font-size: 50px;
+				padding: 0 20px;
+			}
+			a {
+				border: 1px solid white;
+				text-decoration: none;
+				color: white;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				font-family: $font__accent;
+				margin-left: 20px;
+			}
 		}
 		.container2 {
 			width: 49%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			a {
+				border: 1px solid white;
+				text-decoration: none;
+				color: white;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				font-family: $font__accent;
+				margin-left: 20px;
+			}
 			.secondbox {
 				height: 47%;
 				background-color: green;
@@ -186,5 +213,14 @@
 				}
 			}
 		}
+	}
+	.adventure {
+		color: white;
+		text-decoration: none;
+		background-color: $color__green;
+		padding: 10px 20px 10px 20px;
+		text-transform: uppercase;
+		font-family: $font__accent;
+		margin-top: 20px;
 	}
 }

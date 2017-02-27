@@ -4,15 +4,17 @@
         display: flex;
         margin: 0 auto;
         padding-top: 50px;
+        padding-bottom: 80px;
     }
     #primary {
         width: 70%;
-        padding: 50px 50px 0 50px;
+        padding-right: 50px;
         h1 {
             text-transform: uppercase;
             font-family: $font__accent;
             border-bottom: 1px solid $color__border;
             padding: 20px 0;
+            font-size: 40px;
         }
     }
     #secondary {
@@ -20,7 +22,7 @@
         width: 30%;
         border-left: 1px solid $color__border;
     }
-    .post-94 {
+    article {
         h2 {
             font-size: 40px;
             text-transform: uppercase;
@@ -56,6 +58,69 @@
         h2 {
             color: $color__purple;
             font-family: $font__accent;
+        }
+    }
+    .textwidget {
+        p {
+            color: $color__green;
+            i {
+                color: $font__color;
+            }
+        }
+        .address {
+            color: $font__color;
+        }
+    }
+    .entry-summary {
+        a {
+            font-family: $font__accent;
+            color: $font__color;
+            text-transform: uppercase;
+            border: 1px solid black;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 10px 20px 10px 20px;
+            &:hover {
+                background-color: $color__green;
+                color: white;
+                border-color: $color__green;
+            }
+        }
+    }
+    .search-pagination {
+        border-top: 1px solid $color__border;
+        padding-top: 50px;
+        font-family: $font__accent;
+        .page-numbers {
+            padding: 8px 13px;
+            margin-right: 8px;
+            background-color: $color__green;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                background-color: $color__purple;
+            }
+            span {
+                background-color: grey;
+            }
+        }
+    }
+    .widget {
+        ul {
+            margin: 0;
+            padding-left: 0;
+        }
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
+        p {
+            margin: 20px 0;
+        }
+        span {
+            font-weight: bold;
         }
     }
     .textwidget {

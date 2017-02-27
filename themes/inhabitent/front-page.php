@@ -52,7 +52,7 @@ get_header(); ?>
         <?php red_starter_posted_on(); ?> / <?php comments_number(); ?></div><!-- .entry-meta -->
         <a class="journal-title" href="<?php the_permalink(); ?>"><?php the_title( '<h3 class="entry-title">', '</h3>' ); ?></a>
 
-        <a class="read-more" href="<?php the_permalink(); ?>"> Read more </a>
+        <a class="read-more" href="<?php the_permalink(); ?>"> Read Entry </a>
         </div>
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
@@ -61,19 +61,32 @@ get_header(); ?>
   
   <div class="latest">
       <h2> Latest Adventures</h2>
-      <div class="image-container">
+        <div class="image-container">
         <div class="firstbox"> 
-          <p>Getting Back to Nature in a Canoe</p>
-          <a href="">read more</a>
+          <h3>Getting Back to Nature in a Canoe</h3>
+           <?php the_post_thumbnail( 'large' ); ?>
+          <a class="read-more" href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/"> read more</a>
         </div>
         <div class="container2">
-          <div class="secondbox"></div>
-          <div class="container3">
-          <div class="thirdbox"></div>
-          <div class="fourthbox"></div>
-          </div>
+        <div class="secondbox">
+          <h3>Getting Back to Nature in a Canoe</h3>
+          <a href="">read more</a>
         </div>
-      </div>
+        <div class="container3">
+        <div class="thirdbox">
+          <h3>Getting Back to Nature in a Canoe</h3>
+          <a href="">read more</a>
+        </div>
+        <div class="fourthbox">
+          <h3>Getting Back to Nature in a Canoe</h3>
+          <a href="">read more</a>
+        </div>
+    
+        </div>
+        </div>
+         <a class="adventure" href="">more adventures</a>
+        </div>
+        
     </div>
 
 </section>
