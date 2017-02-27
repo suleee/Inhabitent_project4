@@ -40,11 +40,31 @@
             font-size: 20px;
         }
         textarea {
-            background-color: #f4f4f4;
+            background-color: $color__comment-bg;
+            border-color: $color__border;
         }
-        input {
+        .wpcf7-text {
             border-radius: 0px;
-            background-color: #f4f4f4;
+            background-color: $color__comment-bg;
+            border-color: $color__border;
+        }
+        label{
+            font-family: $font__accent;
+            text-transform: uppercase;
+            color: $color__purple;
+        }
+    }
+    form{
+        .wpcf7-submit{
+            background-color: $color__green;
+            border: none;
+            font-weight: lighter;
+            color: white;
+            font-family: $font__accent;
+            font-size: 15px;
+            text-transform: uppercase;
+            box-shadow: none;
+            padding: 10px 30px;
         }
     }
 }

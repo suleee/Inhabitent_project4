@@ -321,12 +321,11 @@ a {
   .page-template .main-navigation a {
     color: white; }
 
-.menu a {
-  text-shadow: 0.5px 1px grey; }
-
 .main-navigation {
   position: fixed;
   z-index: 1;
+  /* display: block;*/
+  /* float: left;*/
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #d3d3d3; }
@@ -350,7 +349,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
     text-transform: uppercase; }
   .main-navigation .container {
     width: 1120px;
@@ -365,9 +364,9 @@ a {
     margin: 0;
     padding-left: 0;
     -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    flex-basis: 20%;
     -ms-flex-line-pack: end;
-        align-content: flex-end; }
+    align-content: flex-end; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -730,16 +729,16 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     width: 1120px;
     margin: auto; }
     .home .site-content .shopstufftitle .taxonomy_loop {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-          justify-content: center;
+      justify-content: center;
       margin: 0 30px 20px 30px; }
       .home .site-content .shopstufftitle .taxonomy_loop .category-wrappper {
         padding: 15px 15px 25px 15px;
@@ -770,9 +769,9 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: center;
-        justify-content: center; }
+    justify-content: center; }
     .home .site-content .inhabitent-journal-posts h2 {
       min-width: 100%;
       text-align: center; }
@@ -839,9 +838,9 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+    justify-content: space-between; }
     .home .site-content .image-container .firstbox {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/canoe-girl.jpg") center center no-repeat;
       background-size: auto, cover, cover;
@@ -862,15 +861,16 @@ textarea {
         font-family: "novecentosanswide", sans-serif;
         margin-left: 20px; }
         .home .site-content .image-container .firstbox a:hover {
-          background-color: #19625d; }
+          background-color: #19625d;
+          border-color: #19625d; }
     .home .site-content .image-container .container2 {
       width: 49%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
-          flex-direction: column;
+      flex-direction: column;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+      justify-content: space-between; }
       .home .site-content .image-container .container2 a {
         border: 1px solid white;
         text-decoration: none;
@@ -894,7 +894,7 @@ textarea {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+        justify-content: space-between; }
         .home .site-content .image-container .container2 .container3 .thirdbox {
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") center center no-repeat;
           background-size: auto, cover, cover;
@@ -904,7 +904,10 @@ textarea {
             color: white;
             font-weight: lighter;
             font-size: 25px;
-            padding: 0 20px; }
+            padding: 0 20px;
+            /* 	&:hover{*/
+            /* 	color: $color__yellow;*/
+            /* }*/ }
         .home .site-content .image-container .container2 .container3 .fourthbox {
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/night-sky.jpg") center center no-repeat;
           background-size: auto, cover, cover;
@@ -914,7 +917,10 @@ textarea {
             color: white;
             font-weight: lighter;
             font-size: 25px;
-            padding: 0 20px; }
+            padding: 0 20px;
+            /* &:hover{*/
+            /* 	color: $color__yellow;*/
+            /* }*/ }
   .home .site-content .adventure {
     color: white;
     text-decoration: none;
@@ -952,14 +958,14 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+  justify-content: space-between; }
   .product-posts .posts {
     border: 1px solid #e1e1e1;
     margin-bottom: 10px;
     -ms-flex: 0 1 23%;
-        flex: 0 1 23%;
+    flex: 0 1 23%;
     max-width: 23%;
     height: 300px;
     overflow: hidden; }
@@ -997,9 +1003,9 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     list-style-type: none;
     padding: 0 0 50px 0;
     margin: auto; }
@@ -1019,14 +1025,14 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+  justify-content: space-between; }
   .post-type-archive-products .product-posts .posts {
     border: 1px solid #e1e1e1;
     margin-bottom: 10px;
     -ms-flex: 0 1 23%;
-        flex: 0 1 23%;
+    flex: 0 1 23%;
     max-width: 23%;
     height: 300px;
     overflow: hidden; }
@@ -1050,7 +1056,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 100px;
   width: 1120px; }
@@ -1072,7 +1078,7 @@ textarea {
   display: flex;
   width: 50%;
   -ms-flex-direction: column;
-      flex-direction: column; }
+  flex-direction: column; }
 
 .single-products .product_price {
   font-size: 25px;
@@ -1165,9 +1171,9 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+    align-items: center; }
   .page-template-singlepage-template .site-content .about-hero-text {
     color: white;
     font-size: 50px;
@@ -1376,11 +1382,29 @@ textarea {
   font-size: 20px; }
 
 .page-id-19 .entry-content textarea {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  border-color: #e1e1e1; }
 
-.page-id-19 .entry-content input {
+.page-id-19 .entry-content .wpcf7-text {
   border-radius: 0px;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  border-color: #e1e1e1; }
+
+.page-id-19 .entry-content label {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339; }
+
+.page-id-19 form .wpcf7-submit {
+  background-color: #248A83;
+  border: none;
+  font-weight: lighter;
+  color: white;
+  font-family: "novecentosanswide", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  box-shadow: none;
+  padding: 10px 30px; }
 
 .search .site-content {
   width: 1120px;
@@ -1547,7 +1571,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .single-post form .comment-form-comment {
     width: 100%; }
   .single-post form .comment-form-author {
@@ -1576,7 +1600,7 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    flex-wrap: wrap; }
     .single-post form label span {
       color: #d99054; }
 
@@ -1773,7 +1797,8 @@ object {
   #secondary .textwidget p {
     color: #248A83; }
     #secondary .textwidget p i {
-      color: #404040; }
+      color: #404040;
+      margin-right: 8px; }
   #secondary .textwidget .address {
     color: #404040; }
   #secondary h2 {
