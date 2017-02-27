@@ -63,23 +63,24 @@ get_header(); ?>
       <h2> Latest Adventures</h2>
         <div class="image-container">
         <div class="firstbox"> 
-          <h3>Getting Back to Nature in a Canoe</h3>
+         <h3>Getting Back to Nature in a Canoe</h3>
            <?php the_post_thumbnail( 'large' ); ?>
           <a class="read-more" href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/"> read more</a>
+         
         </div>
         <div class="container2">
         <div class="secondbox">
-          <h3>Getting Back to Nature in a Canoe</h3>
-          <a href="">read more</a>
+          <h3>A Night with Friends at the Beach</h3>
+          <a href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/">read more</a>
         </div>
         <div class="container3">
         <div class="thirdbox">
-          <h3>Getting Back to Nature in a Canoe</h3>
-          <a href="">read more</a>
+          <h3>Taking in the View at Big Mountain</h3>
+          <a href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/">read more</a>
         </div>
         <div class="fourthbox">
-          <h3>Getting Back to Nature in a Canoe</h3>
-          <a href="">read more</a>
+          <h3>Star-Gazing at the Night Sky</h3>
+          <a href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/">read more</a>
         </div>
     
         </div>

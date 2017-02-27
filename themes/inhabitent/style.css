@@ -321,6 +321,9 @@ a {
   .page-template .main-navigation a {
     color: white; }
 
+.menu a {
+  text-shadow: 0.5px 1px grey; }
+
 .main-navigation {
   position: fixed;
   z-index: 1;
@@ -840,8 +843,8 @@ textarea {
     -ms-flex-pack: justify;
         justify-content: space-between; }
     .home .site-content .image-container .firstbox {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/") center center no-repeat;
-      background-size: auto, contain, cover;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/canoe-girl.jpg") center center no-repeat;
+      background-size: auto, cover, cover;
       height: 500px;
       width: 49%;
       background-color: yellow; }
@@ -858,6 +861,8 @@ textarea {
         text-transform: uppercase;
         font-family: "novecentosanswide", sans-serif;
         margin-left: 20px; }
+        .home .site-content .image-container .firstbox a:hover {
+          background-color: #19625d; }
     .home .site-content .image-container .container2 {
       width: 49%;
       display: -ms-flexbox;
@@ -875,8 +880,15 @@ textarea {
         font-family: "novecentosanswide", sans-serif;
         margin-left: 20px; }
       .home .site-content .image-container .container2 .secondbox {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") center center no-repeat;
+        background-size: auto, cover, cover;
         height: 47%;
         background-color: green; }
+        .home .site-content .image-container .container2 .secondbox h3 {
+          color: white;
+          font-weight: lighter;
+          font-size: 35px;
+          padding: 0 20px; }
       .home .site-content .image-container .container2 .container3 {
         height: 47%;
         display: -ms-flexbox;
@@ -884,11 +896,25 @@ textarea {
         -ms-flex-pack: justify;
             justify-content: space-between; }
         .home .site-content .image-container .container2 .container3 .thirdbox {
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") center center no-repeat;
+          background-size: auto, cover, cover;
           width: 48%;
           background-color: purple; }
+          .home .site-content .image-container .container2 .container3 .thirdbox h3 {
+            color: white;
+            font-weight: lighter;
+            font-size: 25px;
+            padding: 0 20px; }
         .home .site-content .image-container .container2 .container3 .fourthbox {
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/night-sky.jpg") center center no-repeat;
+          background-size: auto, cover, cover;
           width: 48%;
           background-color: red; }
+          .home .site-content .image-container .container2 .container3 .fourthbox h3 {
+            color: white;
+            font-weight: lighter;
+            font-size: 25px;
+            padding: 0 20px; }
   .home .site-content .adventure {
     color: white;
     text-decoration: none;
@@ -897,6 +923,8 @@ textarea {
     text-transform: uppercase;
     font-family: "novecentosanswide", sans-serif;
     margin-top: 20px; }
+    .home .site-content .adventure:hover {
+      background-color: #19625d; }
 
 .tax-product_type #content {
   margin-bottom: 50px; }
@@ -1117,6 +1145,18 @@ textarea {
   background-color: #248A83;
   color: white;
   border: 1px solid #248A83; }
+
+.page-template-adventure .adventure_text {
+  margin: auto;
+  width: 900px;
+  padding-bottom: 80px; }
+  .page-template-adventure .adventure_text h1 {
+    font-family: "novecentosanswide", sans-serif;
+    font-size: 60px;
+    line-height: 60px; }
+  .page-template-adventure .adventure_text p {
+    text-transform: uppercase;
+    font-family: "novecentosanswide", sans-serif; }
 
 .page-template-singlepage-template .site-content {
   padding-top: 0px; }
@@ -1341,9 +1381,6 @@ textarea {
 .page-id-19 .entry-content input {
   border-radius: 0px;
   background-color: #f4f4f4; }
-
-.page-template-adventure .adventure_text h1 {
-  font-family: "novecentosanswide", sans-serif; }
 
 .search .site-content {
   width: 1120px;

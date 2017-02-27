@@ -65,14 +65,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "frontpage";
 @import "shop-terms";
 @import 'shop';
+
 @import 'shop-single';
 @import 'journal-single';
+@import 'adventure';
 @import "about";
+
 @import "journal";
 @import 'singlepostpage';
 @import '404';
 @import 'findus';
-@import 'adventure';
+
 @import 'search';
 @import 'comment';
 

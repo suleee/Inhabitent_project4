@@ -1,9 +1,16 @@
 .page-template-adventure {
-	// .adventure_header {
-	// 	height: 100vh;
-	// }
+	
 	.adventure_text {
+		margin: auto;
+		width: 900px;
+		padding-bottom: 80px;
 		h1 {
+			font-family: $font__accent;
+			font-size: 60px;
+			line-height: 60px;
+		}
+		p{
+			text-transform: uppercase;
 			font-family: $font__accent;
 		}
 	}

@@ -13,6 +13,8 @@
         margin-bottom: 50px;
     }
     .product-posts {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .page-header {
@@ -24,13 +26,20 @@
 }
 
 .product-posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     .posts {
         border: 1px solid #e1e1e1;
         margin-bottom: 10px;
-        flex: 0 1 23%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 23%;
+                flex: 0 1 23%;
         max-width: 23%;
         height: 300px;
         overflow: hidden;
@@ -41,7 +50,8 @@
                 max-height: 250px;
                 max-width: none;
                 width: auto;
-                transform: translate(-10%, 0%);
+                -webkit-transform: translate(-10%, 0%);
+                        transform: translate(-10%, 0%);
             }
         }
         .title {

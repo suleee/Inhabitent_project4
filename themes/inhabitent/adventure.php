@@ -14,8 +14,10 @@ get_header(); ?>
         
 </section>
         <div class="adventure_text">
-                <h1 class="adavanture"> Getting Back to Nature in a Canoe</h1>
-		<?php echo CFS()->get( 'featuretext' ); ?>
+                <h1 class="adavanture"> getting back to nature in a canoe</h1>
+		<p><?php red_starter_posted_by(); ?></p>
+                <?php echo CFS()->get( 'featuretext' ); ?>
+                
         </div>
 
 

@@ -4,8 +4,12 @@
     }
     .entry-header {
         margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding-top: 100px;
         padding-bottom: 100px;
         width: 1120px;
@@ -24,9 +28,14 @@
     }
     .single-product-page {
         margin-left: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 50%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .product_price {
         font-size: 25px;
