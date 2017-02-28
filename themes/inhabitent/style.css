@@ -328,7 +328,7 @@ a {
   /* float: left;*/
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid #d3d3d3; }
+  border-bottom: 1px solid #e1e1e1; }
   .main-navigation .logo {
     width: 10%; }
     .main-navigation .logo h1 {
@@ -1857,7 +1857,7 @@ object {
   display: block; }
 
 #secondary {
-  border-left: 1px solid #d3d3d3;
+  border-left: 1px solid #e1e1e1;
   margin: 0 auto;
   width: 30%;
   padding-left: 50px; }
