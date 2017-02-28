@@ -1410,6 +1410,83 @@ textarea {
 .page-id-19 form .star {
   color: #d99054; }
 
+.date #content {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1120px; }
+
+.date #primary {
+  width: 70%;
+  padding-right: 50px;
+  padding-top: 50px; }
+
+.date #secondary {
+  width: 30%;
+  padding-top: 50px; }
+
+.date article {
+  margin-bottom: 80px; }
+
+.date .page-title {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 40px; }
+
+.date .entry-header {
+  position: relative; }
+  .date .entry-header img {
+    max-width: 100%; }
+  .date .entry-header h2 {
+    font-family: "novecentosanswide", sans-serif;
+    position: absolute;
+    top: 0;
+    width: 550px;
+    height: 100px;
+    font-size: 35px;
+    background-color: #248A83;
+    text-transform: uppercase;
+    padding: 12px 20px 0px 20px;
+    line-height: 40px; }
+    .date .entry-header h2 a {
+      color: white;
+      text-decoration: none; }
+    .date .entry-header h2 a:hover {
+      color: #f0e4d1; }
+
+.date .entry-meta {
+  font-family: "novecentosanswide", sans-serif;
+  position: absolute;
+  bottom: 6px;
+  right: 0px;
+  width: 300px;
+  height: 30px;
+  color: white;
+  background-color: #248A83;
+  padding: 5px; }
+
+.date .site-content {
+  padding-top: 50px; }
+
+.date .read-more {
+  font-family: "novecentosanswide", sans-serif;
+  color: black;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.date .read-more:hover {
+  background-color: #248A83;
+  color: white;
+  border: 1px solid #248A83; }
+
 .search .site-content {
   width: 1120px;
   display: -ms-flexbox;
