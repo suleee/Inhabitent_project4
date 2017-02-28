@@ -1,6 +1,5 @@
 .page-id-19 {
-   
-      .side_bar_enabler {
+    .side_bar_enabler {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -10,7 +9,6 @@
         margin: 0 auto;
         width: 1120px;
         padding-top: 50px;
-        
     }
     #primary {
         width: 70%;
@@ -42,20 +40,21 @@
         textarea {
             background-color: $color__comment-bg;
             border-color: $color__border;
+            border-radius: 0;
         }
         .wpcf7-text {
             border-radius: 0px;
             background-color: $color__comment-bg;
             border-color: $color__border;
         }
-        label{
+        label {
             font-family: $font__accent;
             text-transform: uppercase;
             color: $color__purple;
         }
     }
-    form{
-        .wpcf7-submit{
+    form {
+        .wpcf7-submit {
             background-color: $color__green;
             border: none;
             font-weight: lighter;
@@ -65,6 +64,10 @@
             text-transform: uppercase;
             box-shadow: none;
             padding: 10px 30px;
+        }
+
+        .star {
+            color: $color__orange;
         }
     }
 }

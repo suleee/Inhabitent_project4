@@ -15,7 +15,7 @@ get_header(); ?>
           <div class="taxonomy_loop">
           <?php $taxonomies  = get_terms( array(
           'taxonomy' => 'product_type',
-          ) );?> 
+          ) );?>
 
         <?php foreach ( $taxonomies  as $term ):?>
         <div class="category-wrappper">
@@ -33,15 +33,15 @@ get_header(); ?>
       <div class="frontpageposts">
         <?php
         // global $post;
-        $args = array( 
-        'post_type' => 'post', 
+        $args = array(
+        'post_type' => 'post',
         'order' => 'DSC',
         'posts_per_page' => 3);
         $product_posts = get_posts( $args ); // returns an array of posts
         ?>
         <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-  <!--grab from content-sigle.php-->   
-  
+  <!--grab from content-sigle.php-->
+
         <div class="journal-wrapper">
         <div class="thumbnail-wrapper";>
         <?php the_post_thumbnail( 'large' ); ?>
@@ -58,15 +58,15 @@ get_header(); ?>
         <?php endforeach; wp_reset_postdata(); ?>
       </div>
   </div>
-  
+
   <div class="latest">
       <h2> Latest Adventures</h2>
         <div class="image-container">
-        <div class="firstbox"> 
+        <div class="firstbox">
          <h3>Getting Back to Nature in a Canoe</h3>
            <?php the_post_thumbnail( 'large' ); ?>
           <a class="read-more" href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/"> read more</a>
-         
+
         </div>
         <div class="container2">
         <div class="secondbox">
@@ -82,12 +82,12 @@ get_header(); ?>
           <h3>Star-Gazing at the Night Sky</h3>
           <a href="//localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/">read more</a>
         </div>
-    
+
         </div>
         </div>
          <a class="adventure" href="">more adventures</a>
         </div>
-        
+
     </div>
 
 </section>

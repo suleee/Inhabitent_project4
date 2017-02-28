@@ -1383,7 +1383,8 @@ textarea {
 
 .page-id-19 .entry-content textarea {
   background-color: #f4f4f4;
-  border-color: #e1e1e1; }
+  border-color: #e1e1e1;
+  border-radius: 0; }
 
 .page-id-19 .entry-content .wpcf7-text {
   border-radius: 0px;
@@ -1405,6 +1406,9 @@ textarea {
   text-transform: uppercase;
   box-shadow: none;
   padding: 10px 30px; }
+
+.page-id-19 form .star {
+  color: #d99054; }
 
 .search .site-content {
   width: 1120px;
