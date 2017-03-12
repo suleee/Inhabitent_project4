@@ -311,9 +311,45 @@ a {
 /* Menus */
 .home .main-navigation {
   border-bottom: 0px;
-  background-color: transparent; }
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1; }
   .home .main-navigation a {
+    color: #248A83; }
+
+.home .reverse-navigation {
+  border-bottom: 0px;
+  background-color: transparent;
+  position: absolute; }
+  .home .reverse-navigation a {
     color: white; }
+  .home .reverse-navigation .header-logo {
+    background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+    background-size: 100%; }
+
+.adventure-template-default .main-navigation {
+  border-bottom: 0px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1; }
+  .adventure-template-default .main-navigation a {
+    color: #248A83; }
+
+.adventure-template-default .reverse-navigation {
+  border-bottom: 0px;
+  background-color: transparent;
+  position: absolute; }
+  .adventure-template-default .reverse-navigation a {
+    color: white; }
+  .adventure-template-default .reverse-navigation .header-logo {
+    background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+    background-size: 100%; }
 
 .page-template .main-navigation {
   border-bottom: 0px;
@@ -323,9 +359,7 @@ a {
 
 .main-navigation {
   position: fixed;
-  z-index: 1;
-  /* display: block;*/
-  /* float: left;*/
+  z-index: 3;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1; }
@@ -338,11 +372,13 @@ a {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    width: 60px;
+    width: 100px;
     text-align: center;
     overflow: hidden;
     text-indent: 100%;
-    white-space: nowrap; }
+    white-space: nowrap;
+    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+    background-size: contain; }
   .main-navigation .right-menu {
     width: 90%;
     padding-top: 5px;
@@ -436,17 +472,29 @@ a {
 fieldset {
   border: none;
   padding: 0; }
+  fieldset .search-toggle {
+    display: inline; }
 
-input:focus {
-  border: none; }
+label #search-field {
+  background: transparent;
+  border: none;
+  display: none;
+  font-family: "novecentosanswide", sans-serif; }
+
+label input::-webkit-input-placeholder {
+  color: #f0e4d1; }
+
+label input::-moz-placeholder {
+  color: #f0e4d1; }
+
+label input:-ms-input-placeholder {
+  color: #f0e4d1; }
+
+label input::placeholder {
+  color: #f0e4d1; }
 
 .header-search label {
-  position: absolute;
-  top: 10px; }
-
-.header-search .search-field {
-  background: transparent;
-  border: none; }
+  display: inline; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -504,19 +552,6 @@ input:focus {
   clear: both;
   content: "";
   display: table; }
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5rem;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -703,6 +738,63 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.adventure-template-default .single-product-page {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px; }
+  .adventure-template-default .single-product-page h1 {
+    font-size: 2.4rem;
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 0;
+    line-height: 1.25; }
+  .adventure-template-default .single-product-page .adventure-author {
+    text-transform: uppercase;
+    font-family: "novecentosanswide", sans-serif;
+    font-size: 20px;
+    margin-top: 0; }
+
+.adventure-template-default .widget-area {
+  display: none; }
+
+.adventure-template-default .social-media {
+  font-family: "novecentosanswide", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 10px 25px 10px 25px; }
+
+.adventure-template-default .social-media:hover {
+  background-color: #248A83;
+  color: white;
+  border: 1px solid #248A83; }
+
+.post-type-archive-adventure #primary {
+  max-width: 1120px;
+  margin: auto; }
+
+.post-type-archive-adventure .page-header {
+  padding-top: 80px;
+  text-align: center; }
+  .post-type-archive-adventure .page-header h1 {
+    text-transform: uppercase;
+    font-family: "novecentosanswide", sans-serif;
+    border-bottom: 1px dashed #c8c8c8; }
+
+.post-type-archive-adventure .product-posts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.post-type-archive-adventure .posts {
+  width: 49%;
+  margin-bottom: 20px; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -719,7 +811,7 @@ textarea {
     font-family: "novecentosanswide", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 2.4rem;
     color: #2f1339;
     margin-bottom: 3rem;
     margin-top: 3rem;
@@ -738,10 +830,9 @@ textarea {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-      justify-content: center;
-      margin: 0 30px 20px 30px; }
+      justify-content: center; }
       .home .site-content .shopstufftitle .taxonomy_loop .category-wrappper {
-        padding: 15px 15px 25px 15px;
+        padding: 15px 8px 20px 8px;
         border: 1px solid #e1e1e1;
         border-top: 5px solid #e1e1e1;
         margin: 0 10px 0 10px;
@@ -765,13 +856,17 @@ textarea {
           text-decoration: none;
           background-color: #248A83;
           padding: 10px 20px 10px 20px; }
+        .home .site-content .shopstufftitle .taxonomy_loop .category-wrappper .stuff {
+          margin-top: 10px; }
   .home .site-content .inhabitent-journal-posts {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    width: 1120px;
+    margin: 0 auto; }
     .home .site-content .inhabitent-journal-posts h2 {
       min-width: 100%;
       text-align: center; }
@@ -784,14 +879,15 @@ textarea {
       padding: 10px 20px 10px 20px; }
     .home .site-content .inhabitent-journal-posts .frontpageposts {
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
       .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper {
-        margin: 0 5px 0 5px;
         border: 1px solid #e1e1e1;
-        max-width: 340px;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
         overflow: hidden; }
         .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .thumbnail-wrapper {
-          width: 340px;
           height: 245px;
           background-color: #e1e1e1; }
           .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .thumbnail-wrapper img {
@@ -828,109 +924,74 @@ textarea {
             font-size: 12px; }
             .home .site-content .inhabitent-journal-posts .frontpageposts .journal-wrapper .journal-text-wrapper .entry-meta .byline {
               visibility: hidden; }
-  .home .site-content .latest {
-    margin: auto; }
-  .home .site-content .image-container {
+  .home .site-content .adventure {
     margin: auto;
-    padding-bottom: 100px;
+    width: 1120px; }
+  .home .site-content .adventure-container {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
     width: 1120px;
     height: 500px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .home .site-content .image-container .firstbox {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/canoe-girl.jpg") center center no-repeat;
-      background-size: auto, cover, cover;
-      height: 500px;
-      width: 49%;
-      background-color: yellow; }
-      .home .site-content .image-container .firstbox h3 {
-        color: white;
-        font-weight: lighter;
-        font-size: 50px;
-        padding: 0 20px; }
-      .home .site-content .image-container .firstbox a {
-        border: 1px solid white;
-        text-decoration: none;
-        color: white;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-family: "novecentosanswide", sans-serif;
-        margin-left: 20px; }
-        .home .site-content .image-container .firstbox a:hover {
-          background-color: #19625d;
-          border-color: #19625d; }
-    .home .site-content .image-container .container2 {
-      width: 49%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .home .site-content .image-container .container2 a {
-        border: 1px solid white;
-        text-decoration: none;
-        color: white;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-family: "novecentosanswide", sans-serif;
-        margin-left: 20px; }
-      .home .site-content .image-container .container2 .secondbox {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/beach-bonfire.jpg") center center no-repeat;
-        background-size: auto, cover, cover;
-        height: 47%;
-        background-color: green; }
-        .home .site-content .image-container .container2 .secondbox h3 {
-          color: white;
-          font-weight: lighter;
-          font-size: 35px;
-          padding: 0 20px; }
-      .home .site-content .image-container .container2 .container3 {
-        height: 47%;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-        .home .site-content .image-container .container2 .container3 .thirdbox {
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/mountain-hikers.jpg") center center no-repeat;
-          background-size: auto, cover, cover;
-          width: 48%;
-          background-color: purple; }
-          .home .site-content .image-container .container2 .container3 .thirdbox h3 {
-            color: white;
-            font-weight: lighter;
-            font-size: 25px;
-            padding: 0 20px;
-            /* 	&:hover{*/
-            /* 	color: $color__yellow;*/
-            /* }*/ }
-        .home .site-content .image-container .container2 .container3 .fourthbox {
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/adventure-photos/night-sky.jpg") center center no-repeat;
-          background-size: auto, cover, cover;
-          width: 48%;
-          background-color: red; }
-          .home .site-content .image-container .container2 .container3 .fourthbox h3 {
-            color: white;
-            font-weight: lighter;
-            font-size: 25px;
-            padding: 0 20px;
-            /* &:hover{*/
-            /* 	color: $color__yellow;*/
-            /* }*/ }
-  .home .site-content .adventure {
-    color: white;
-    text-decoration: none;
-    background-color: #248A83;
-    padding: 10px 20px 10px 20px;
-    text-transform: uppercase;
-    font-family: "novecentosanswide", sans-serif;
-    margin-top: 20px; }
-    .home .site-content .adventure:hover {
-      background-color: #19625d; }
+    list-style-type: none; }
+    .home .site-content .adventure-container .read-more {
+      top: 100px;
+      left: 50px;
+      position: absolute;
+      color: white;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid white;
+      padding: 10px 20px 10px 20px;
+      font-family: "novecentosanswide", sans-serif;
+      text-transform: uppercase;
+      z-index: 2; }
+    .home .site-content .adventure-container li {
+      float: left;
+      position: relative;
+      overflow: hidden;
+      height: 541px;
+      background-color: grey; }
+    .home .site-content .adventure-container li:first-child {
+      width: 50%;
+      border-right: 20px solid white; }
+      .home .site-content .adventure-container li:first-child img {
+        height: auto;
+        max-width: 100%;
+        left: 50%;
+        max-height: 620px;
+        max-width: none;
+        position: absolute;
+        top: 72%;
+        transform: translate(-50%, -75%);
+        width: auto; }
+    .home .site-content .adventure-container li:nth-child(2) {
+      width: 50%;
+      height: 300px;
+      border-bottom: 20px solid white; }
+      .home .site-content .adventure-container li:nth-child(2) img {
+        height: auto;
+        max-width: 100%;
+        left: 50%;
+        max-height: 620px;
+        max-width: none;
+        position: absolute;
+        top: 115%;
+        transform: translate(-50%, -75%);
+        width: auto; }
+    .home .site-content .adventure-container li:nth-child(3) {
+      width: 25%;
+      border-right: 10px solid white;
+      height: 242px; }
+    .home .site-content .adventure-container li:nth-child(4) {
+      width: 25%;
+      border-left: 10px solid white;
+      height: 242px; }
+    .home .site-content .adventure-container .adventure-wrapper {
+      bottom: 0; }
+      .home .site-content .adventure-container .adventure-wrapper img {
+        height: auto;
+        max-width: 100%; }
 
 .tax-product_type #content {
   margin-bottom: 50px; }
@@ -954,14 +1015,14 @@ textarea {
   .tax-product_type .page-header h1 {
     font-family: "novecentosanswide", sans-serif; }
 
-.product-posts {
+.tax-product_type .product-posts {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .product-posts .posts {
+  .tax-product_type .product-posts .posts {
     border: 1px solid #e1e1e1;
     margin-bottom: 10px;
     -ms-flex: 0 1 23%;
@@ -969,15 +1030,15 @@ textarea {
     max-width: 23%;
     height: 300px;
     overflow: hidden; }
-    .product-posts .posts .thumbnail-wrapper {
+    .tax-product_type .product-posts .posts .thumbnail-wrapper {
       height: 250px;
       background-color: #e1e1e1; }
-      .product-posts .posts .thumbnail-wrapper img {
+      .tax-product_type .product-posts .posts .thumbnail-wrapper img {
         max-height: 250px;
         max-width: none;
         width: auto;
         transform: translate(-10%, 0%); }
-    .product-posts .posts .title {
+    .tax-product_type .product-posts .posts .title {
       text-align: center;
       padding-top: 10px; }
 
@@ -1151,18 +1212,6 @@ textarea {
   background-color: #248A83;
   color: white;
   border: 1px solid #248A83; }
-
-.page-template-adventure .adventure_text {
-  margin: auto;
-  width: 900px;
-  padding-bottom: 80px; }
-  .page-template-adventure .adventure_text h1 {
-    font-family: "novecentosanswide", sans-serif;
-    font-size: 60px;
-    line-height: 60px; }
-  .page-template-adventure .adventure_text p {
-    text-transform: uppercase;
-    font-family: "novecentosanswide", sans-serif; }
 
 .page-template-singlepage-template .site-content {
   padding-top: 0px; }
@@ -1406,6 +1455,8 @@ textarea {
   text-transform: uppercase;
   box-shadow: none;
   padding: 10px 30px; }
+  .page-id-19 form .wpcf7-submit:hover {
+    background-color: #19625d; }
 
 .page-id-19 form .star {
   color: #d99054; }
@@ -1855,6 +1906,19 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5rem;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
 
 #secondary {
   border-left: 1px solid #e1e1e1;
