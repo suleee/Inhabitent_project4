@@ -43,7 +43,7 @@ get_header(); ?>
   <!--grab from content-sigle.php-->
 
         <div class="journal-wrapper">
-        <div class="thumbnail-wrapper";>
+        <div class="thumbnail-wrapper">
         <?php the_post_thumbnail( 'large' ); ?>
         </div>
         <div class="journal-text-wrapper">
