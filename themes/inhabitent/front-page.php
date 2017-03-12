@@ -61,33 +61,30 @@ get_header(); ?>
 
   <div class="adventure">
       <h2> Latest Adventures</h2>
-        <ul class="adventure-container">
- <?php
+        <?php
         $arguements = array(
         'post_type' => 'adventure',
         'order' => 'ASC',
         'taxonomy' => 'adventure');
-        $adventures = get_posts( $arguements ); // returns an array of posts
+        $adventures = get_posts( $arguements)  // returns an array of posts
         ?>
-        <?php foreach ( $adventures as $adventure ) : setup_postdata( $adventure );
+        <ul class="adventure-container">
 
-        ?>
+        <?php foreach ( $adventures as $adventure ) : setup_postdata( $adventure );?>
 
         <li class="adventure-image" >
-        <a href="<?php the_permalink($adventure); ?>" rel="bookmark"><?php the_title( '<h3>', '</h3>' ); ?></a>
-
         <div class="adventure-wrapper">
-
-
-        <a class="read-more" href="<?php echo get_permalink($adventure); ?>"> Read Entry </a>
         <?php echo get_the_post_thumbnail($adventure) ?>
-
+        <div class="adventure-info">
+         <h3><a href="<?php the_permalink($adventure); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+         <a class="read-more" href="<?php echo get_permalink($adventure); ?>"> Read Entry </a>
+       </div>
         </div>
         </li>
         <?php endforeach; wp_reset_postdata(); ?>
         </ul>
 
-<p class="see-more"><a href="<?php echo get_permalink(); ?>">more adventure</a></p>
+        <p class="see-more"><a href="<?php echo get_post_type_archive_link('adventure'); ?>">more adventure</a></p>
 
 </div>
 </section>

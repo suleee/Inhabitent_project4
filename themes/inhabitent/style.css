@@ -325,6 +325,7 @@ a {
   background-color: transparent;
   position: absolute; }
   .home .reverse-navigation a {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     color: white; }
   .home .reverse-navigation .header-logo {
     background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
@@ -346,6 +347,7 @@ a {
   background-color: transparent;
   position: absolute; }
   .adventure-template-default .reverse-navigation a {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     color: white; }
   .adventure-template-default .reverse-navigation .header-logo {
     background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
@@ -353,9 +355,25 @@ a {
 
 .page-template .main-navigation {
   border-bottom: 0px;
-  background-color: transparent; }
+  background-color: transparent;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1; }
   .page-template .main-navigation a {
+    color: #248A83; }
+
+.page-template .reverse-navigation {
+  border-bottom: 0px;
+  background-color: transparent;
+  position: absolute; }
+  .page-template .reverse-navigation a {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     color: white; }
+  .page-template .reverse-navigation .header-logo {
+    background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+    background-size: 100%; }
 
 .main-navigation {
   position: fixed;
@@ -777,11 +795,23 @@ textarea {
 
 .post-type-archive-adventure .page-header {
   padding-top: 80px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20px; }
   .post-type-archive-adventure .page-header h1 {
     text-transform: uppercase;
     font-family: "novecentosanswide", sans-serif;
-    border-bottom: 1px dashed #c8c8c8; }
+    border-bottom: 1px dashed #c8c8c8;
+    font-size: 40px;
+    padding-bottom: 10px; }
+
+.post-type-archive-adventure .adventure-title {
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  font-size: 50px;
+  padding: 30px 0 0 30px;
+  line-height: 58px; }
 
 .post-type-archive-adventure .product-posts {
   display: -ms-flexbox;
@@ -789,11 +819,53 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  margin-bottom: 50px; }
 
 .post-type-archive-adventure .posts {
+  position: relative;
   width: 49%;
-  margin-bottom: 20px; }
+  height: 500px;
+  margin-bottom: 20px;
+  overflow: hidden; }
+
+.post-type-archive-adventure .adventure-thumbnail:after {
+  background: rgba(0, 0, 0, 0.35);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.post-type-archive-adventure .adventure-thumbnail img {
+  height: auto;
+  max-width: 100%;
+  left: 50%;
+  max-height: 620px;
+  max-width: none;
+  position: absolute;
+  top: 72%;
+  transform: translate(-50%, -75%);
+  width: auto; }
+
+.post-type-archive-adventure .read-more {
+  z-index: 2;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  bottom: 270px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  margin-left: 30px; }
+  .post-type-archive-adventure .read-more:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #248A83;
+    border: 1px solid #248A83; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -932,26 +1004,29 @@ textarea {
     padding: 0;
     text-align: center;
     width: 1120px;
-    height: 500px;
+    height: 550px;
     list-style-type: none; }
     .home .site-content .adventure-container .read-more {
       top: 100px;
-      left: 50px;
+      left: 20px;
       position: absolute;
       color: white;
       text-decoration: none;
-      background-color: rgba(255, 255, 255, 0.08);
       border: 1px solid white;
       padding: 10px 20px 10px 20px;
       font-family: "novecentosanswide", sans-serif;
       text-transform: uppercase;
       z-index: 2; }
+      .home .site-content .adventure-container .read-more:hover {
+        color: white;
+        text-decoration: none;
+        background-color: #248A83;
+        border: 1px solid #248A83; }
     .home .site-content .adventure-container li {
       float: left;
       position: relative;
       overflow: hidden;
-      height: 541px;
-      background-color: grey; }
+      height: 541px; }
     .home .site-content .adventure-container li:first-child {
       width: 50%;
       border-right: 20px solid white; }
@@ -973,25 +1048,75 @@ textarea {
         height: auto;
         max-width: 100%;
         left: 50%;
-        max-height: 620px;
+        max-height: 533px;
         max-width: none;
         position: absolute;
-        top: 115%;
+        top: 86%;
         transform: translate(-50%, -75%);
         width: auto; }
     .home .site-content .adventure-container li:nth-child(3) {
       width: 25%;
       border-right: 10px solid white;
       height: 242px; }
+      .home .site-content .adventure-container li:nth-child(3) img {
+        height: auto;
+        max-width: 100%;
+        left: 50%;
+        max-height: 300px;
+        max-width: none;
+        position: absolute;
+        top: 76%;
+        transform: translate(-50%, -75%);
+        width: auto; }
     .home .site-content .adventure-container li:nth-child(4) {
       width: 25%;
       border-left: 10px solid white;
       height: 242px; }
+      .home .site-content .adventure-container li:nth-child(4) img {
+        height: auto;
+        max-width: 100%;
+        left: 50%;
+        max-height: 300px;
+        max-width: none;
+        position: absolute;
+        top: 76%;
+        transform: translate(-50%, -75%);
+        width: auto; }
     .home .site-content .adventure-container .adventure-wrapper {
       bottom: 0; }
       .home .site-content .adventure-container .adventure-wrapper img {
         height: auto;
         max-width: 100%; }
+      .home .site-content .adventure-container .adventure-wrapper:after {
+        background: rgba(0, 0, 0, 0.35);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1; }
+  .home .site-content .adventure-info {
+    position: relative; }
+    .home .site-content .adventure-info h3 {
+      z-index: 2;
+      position: absolute; }
+      .home .site-content .adventure-info h3 a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        font-size: 20px; }
+        .home .site-content .adventure-info h3 a:hover {
+          color: #f0e4d1; }
+  .home .site-content .see-more a {
+    color: white;
+    text-decoration: none;
+    background-color: #248A83;
+    padding: 12px 25px 12px 25px;
+    font-family: "novecentosanswide", sans-serif;
+    font-size: 22px; }
+    .home .site-content .see-more a:hover {
+      background-color: #19625d; }
 
 .tax-product_type #content {
   margin-bottom: 50px; }

@@ -45,6 +45,7 @@ a {
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	a {
+		text-shadow: 1px 1px rgba(0, 0, 0, .3);
 		color: white;
 	}
 	.header-logo {
@@ -52,6 +53,7 @@ a {
 		background-size: 100%;
 	}
 }
+
 .adventure-template-default .main-navigation {
 	border-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -61,14 +63,19 @@ a {
 	position: fixed;
 	z-index: 3;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255,
+	255,
+	255,
+	0.8);
 	border-bottom: 1px solid $color__border;
 }
+
 .adventure-template-default .reverse-navigation {
 	border-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	a {
+		text-shadow: 1px 1px rgba(0, 0, 0, .3);
 		color: white;
 	}
 	.header-logo {
@@ -76,11 +83,34 @@ a {
 		background-size: 100%;
 	}
 }
+
 .page-template .main-navigation {
 	border-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0);
 	a {
+		color: $color__green;
+	}
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	background-color: rgba(255,
+	255,
+	255,
+	0.8);
+	border-bottom: 1px solid $color__border;
+}
+
+.page-template .reverse-navigation {
+	border-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	a {
+		text-shadow: 1px 1px rgba(0, 0, 0, .3);
 		color: white;
+	}
+	.header-logo {
+		background: url('../../images/logos/inhabitent-logo-tent-white.svg')no-repeat;
+		background-size: 100%;
 	}
 }
 
