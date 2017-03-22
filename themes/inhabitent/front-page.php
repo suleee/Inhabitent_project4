@@ -1,6 +1,6 @@
 <?php
 /**
-* The template for displaying all pages.
+* The template for displaying front-page.
 *
 * @package RED_Starter_Theme
 */
@@ -76,7 +76,7 @@ get_header(); ?>
         <div class="adventure-wrapper">
         <?php echo get_the_post_thumbnail($adventure) ?>
         <div class="adventure-info">
-         <h3><a href="<?php the_permalink($adventure); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+         <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
          <a class="read-more" href="<?php echo get_permalink($adventure); ?>"> Read Entry </a>
        </div>
         </div>

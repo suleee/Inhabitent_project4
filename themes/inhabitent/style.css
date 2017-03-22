@@ -1586,6 +1586,71 @@ textarea {
 .page-id-19 form .star {
   color: #d99054; }
 
+.cateory .tag #content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px; }
+
+.cateory .tag #primary {
+  width: 75%; }
+
+.cateory .tag #secondary {
+  width: 25%; }
+
+.cateory .tag article {
+  margin-bottom: 80px; }
+
+.cateory .tag .entry-header {
+  position: relative; }
+  .cateory .tag .entry-header img {
+    max-width: 100%; }
+  .cateory .tag .entry-header h2 {
+    font-family: "novecentosanswide", sans-serif;
+    position: absolute;
+    top: 0;
+    width: 550px;
+    height: 100px;
+    font-size: 35px;
+    background-color: #248A83;
+    text-transform: uppercase;
+    padding: 12px 20px 0px 20px;
+    line-height: 40px; }
+    .cateory .tag .entry-header h2 a {
+      color: white;
+      text-decoration: none; }
+    .cateory .tag .entry-header h2 a:hover {
+      color: #f0e4d1; }
+
+.cateory .tag .entry-meta {
+  font-family: "novecentosanswide", sans-serif;
+  position: absolute;
+  bottom: 6px;
+  right: 0px;
+  width: 300px;
+  height: 30px;
+  color: white;
+  background-color: #248A83;
+  padding: 5px; }
+
+.cateory .tag .site-content {
+  padding-top: 50px; }
+
+.cateory .tag .read-more {
+  font-family: "novecentosanswide", sans-serif;
+  color: black;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.cateory .tag .read-more:hover {
+  background-color: #248A83;
+  color: white;
+  border: 1px solid #248A83; }
+
 .date #content {
   display: -ms-flexbox;
   display: flex;

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying blog posts.
+ * The template for displaying homepage nad jornal page.
  *
  * @package RED_Starter_Theme
  */
