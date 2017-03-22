@@ -93,12 +93,6 @@ function red_starter_scripts() {
 	wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'red_comments', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true);
 
-	wp_localize_script( 'red_comments', 'red_vars', array(
-		'ajax_url' => admin_url( 'admin-ajax.php' ),
-		'comment_nonce' => wp_create_nonce( 'red_comment_status' ),
-		'post_id' => get_the_ID()
-	));
-
 
 	// comment button
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -112,7 +106,7 @@ add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 // Remove "Editor" links from sub-menus
 function inhabitent_remove_submenus() {
-    remove_submenu_page( 'themes.php', 'theme-editor.php' );    
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action('admin_menu', 'inhabitent_remove_submenus', 110);
@@ -128,32 +122,32 @@ add_action('admin_menu', 'inhabitent_remove_submenus', 110);
  */
 function red_wp_trim_excerpt( $text ) {
 	$raw_excerpt = $text;
-	
+
 	if ( '' == $text ) {
 		// retrieve the post content
 		$text = get_the_content('');
-		
+
 		// delete all shortcode tags from the content
 		$text = strip_shortcodes( $text );
-		
+
 		$text = apply_filters( 'the_content', $text );
 		$text = str_replace( ']]>', ']]&gt;', $text );
-		
+
 		// indicate allowable tags
 		$allowed_tags = '<p>,<a>,<em>,<strong>,<blockquote>,<cite>';
 		$text = strip_tags( $text, $allowed_tags );
-		
+
 		// change to desired word count
 		$excerpt_word_count = 50;
 		$excerpt_length = apply_filters( 'excerpt_length', $excerpt_word_count );
-		
+
 		// create a custom "more" link
 		$excerpt_end = '<span>[...]</span><p><a href="' . get_permalink() . '" class="read-more">Read more &rarr;</a></p>'; // modify excerpt ending
 		$excerpt_more = apply_filters( 'excerpt_more', ' ' . $excerpt_end );
-		
+
 		// add the elipsis and link to the end if the word count is longer than the excerpt
 		$words = preg_split( "/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY );
-		
+
 		if ( count( $words ) > $excerpt_length ) {
 			array_pop( $words );
 			$text = implode( ' ', $words );
@@ -162,7 +156,7 @@ function red_wp_trim_excerpt( $text ) {
 			$text = implode( ' ', $words );
 		}
 	}
-	
+
 	return apply_filters( 'wp_trim_excerpt', $text, $raw_excerpt );
 }
 

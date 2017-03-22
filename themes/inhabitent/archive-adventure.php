@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive for the products post type (shop page).
+ * The template for displaying archive for the adventure page.
  *
  * @package RED_Starter_Theme
  */

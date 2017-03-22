@@ -1,6 +1,6 @@
 <?php
 /**
-* The template for displaying all single posts.
+* The template for displaying all single posts (shop).
 *
 * @package RED_Starter_Theme
 */
@@ -12,7 +12,7 @@ get_header(); ?>
 
 
 <?php while ( have_posts() ) : the_post(); ?>
-    
+
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-header">
             <?php if ( has_post_thumbnail() ) : ?>
@@ -45,8 +45,8 @@ get_header(); ?>
                     </footer>
                 </div>
             <?php endif; ?>
-            
-                
+
+
             </div>
         </article>
     <?php endwhile; // End of the loop. ?>
