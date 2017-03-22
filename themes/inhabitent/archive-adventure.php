@@ -31,8 +31,12 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<div class="product-posts">
-
-				<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+			$args = array(
+			'post_type' => 'adventure',
+			'order' => 'ASC');
+			?>
+				<?php while ( have_posts( ) ) : the_post(  ); ?>
 
 					<div class="posts">
 						<div class="thumbnail-wrapper">
