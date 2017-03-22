@@ -1,5 +1,7 @@
-.cateory .tag {
+.cateory,
+.tag {
     #content {
+        margin: auto;
         display: flex;
         width: $width;
     }
@@ -7,7 +9,8 @@
         width: 75%;
     }
     #secondary {
-       width: 25%;
+        padding-top: 50px;
+        width: 25%;
     }
     article {
         margin-bottom: 80px;
