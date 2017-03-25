@@ -180,7 +180,6 @@
 		height: 550px;
 		list-style-type: none;
 		.read-more {
-			top: 100px;
 			left: 20px;
 			position: absolute;
 			color: white;
@@ -188,6 +187,7 @@
 			border: 1px solid white;
 			padding: 10px 20px 10px 20px;
 			font-family: $font__accent;
+			font-size: 16px;
 			text-transform: uppercase;
 			z-index: 2;
 			&:hover {
@@ -203,6 +203,18 @@
 			overflow: hidden;
 			height: 541px;
 		}
+		h3 {
+			z-index: 2;
+			position: absolute;
+			color: white;
+			font-weight: 100;
+			margin: 0;
+			text-align: left;
+			padding: 40px 20px 0 20px;
+			&:hover {
+				color: $color__yellow;
+			}
+		}
 		li:first-child {
 			width: 50%;
 			border-right: 20px solid white;
@@ -216,6 +228,13 @@
 				top: 72%;
 				transform: translate(-50%, -75%);
 				width: auto;
+			}
+			h3 {
+				font-size: 50px;
+				line-height: 58px;
+			}
+			.read-more {
+				top: 200px;
 			}
 		}
 		li:nth-child(2) {
@@ -233,6 +252,13 @@
 				transform: translate(-50%, -75%);
 				width: auto;
 			}
+			h3 {
+				font-size: 40px;
+				line-height: 48px;
+			}
+			.read-more {
+				top: 170px;
+			}
 		}
 		li:nth-child(3) {
 			width: 25%;
@@ -249,6 +275,13 @@
 				transform: translate(-50%, -75%);
 				width: auto;
 			}
+			h3 {
+				font-size: 28px;
+				line-height: 30px;
+			}
+			.read-more {
+				top: 150px;
+			}
 		}
 		li:nth-child(4) {
 			width: 25%;
@@ -264,6 +297,13 @@
 				top: 76%;
 				transform: translate(-50%, -75%);
 				width: auto;
+			}
+			h3 {
+				font-size: 28px;
+				line-height: 30px;
+			}
+			.read-more {
+				top: 120px;
 			}
 		}
 		.adventure-wrapper {
@@ -286,19 +326,6 @@
 	}
 	.adventure-info {
 		position: relative;
-		h3 {
-			z-index: 2;
-			position: absolute;
-			a {
-				text-decoration: none;
-				color: white;
-				padding: 10px 30px;
-				font-size: 20px;
-				&:hover {
-					color: $color__yellow;
-				}
-			}
-		}
 	}
 	.see-more {
 		a {

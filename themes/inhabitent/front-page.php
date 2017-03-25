@@ -76,7 +76,7 @@ get_header(); ?>
         <div class="adventure-wrapper">
         <?php echo get_the_post_thumbnail( $adventure ) ?>
         <div class="adventure-info">
-         <h3><a href="<?php the_permalink(); ?>"><?php echo get_the_title( $adventure ); ?></a></h3>
+         <a href="<?php the_permalink(); ?>"><h3><?php echo get_the_title( $adventure ); ?></h3></a>
          <a class="read-more" href="<?php echo get_permalink($adventure); ?>"> Read Entry </a>
        </div>
         </div>
