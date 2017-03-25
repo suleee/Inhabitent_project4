@@ -1,12 +1,12 @@
 (function ($) {
     $('.fa-search').on('click', function () {
-        $('.search-field').animate({
+        $('span .serach-header').animate({
             width: 'toggle'
         }, 500);
     });
 
-    $('.search-field').on('blur', function () {
-        $('.search-field').animate({
+    $('span .serach-header').on('blur', function () {
+        $('span .serach-header').animate({
             width: 'toggle'
         }, 500);
     });

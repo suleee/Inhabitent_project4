@@ -514,6 +514,14 @@ label input::placeholder {
 .header-search label {
   display: inline; }
 
+.header-search input {
+  display: none; }
+
+.header-search input[type=search] {
+  padding: 2px;
+  background: 0;
+  border: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1951,12 +1959,12 @@ textarea {
   padding-top: 50px;
   padding-right: 50px; }
 
-.search-no-results fieldset {
+.search-no-results .not-found fieldset {
   position: relative; }
-  .search-no-results fieldset a {
+  .search-no-results .not-found fieldset a {
     position: absolute;
     visibility: hidden; }
-  .search-no-results fieldset .search-field {
+  .search-no-results .not-found fieldset .search-field {
     background-color: #f4f4f4;
     border-color: #e1e1e1;
     border-radius: 0px; }

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying page.
  *
  * @package RED_Starter_Theme
  */
@@ -23,7 +23,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
-	
+
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php get_sidebar(); ?>

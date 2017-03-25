@@ -287,4 +287,12 @@ label {
 	label {
 		display: inline;
 	}
+	input{
+		display: none;
+	}
+	input[type=search]{
+		padding: 2px;
+		background: 0;
+		border: none;
+	}
 }

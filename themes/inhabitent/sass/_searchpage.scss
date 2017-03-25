@@ -9,18 +9,20 @@
         padding-top: 50px;
         padding-right: 50px;
     }
-fieldset{
-    position: relative;
-    a{
-        position: absolute;
-        visibility: hidden;
+    .not-found {
+        fieldset {
+            position: relative;
+            a {
+                position: absolute;
+                visibility: hidden;
+            }
+            .search-field {
+                background-color: $color__comment-bg;
+                border-color: $color__border;
+                border-radius: 0px;
+            }
+        }
     }
-    .search-field{
-        background-color: $color__comment-bg;
-        border-color: $color__border;
-        border-radius: 0px;
-    }
-}
     .page-header {
         border-bottom: 1px solid $color__border;
     }
@@ -56,5 +58,4 @@ fieldset{
     article {
         margin-bottom: 80px;
     }
-   
 }
